@@ -1,0 +1,45 @@
+.a,
+.b,
+.c {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.a {
+    border-bottom-style: solid;
+    border-bottom: 1px solid silver;
+}
+.b {
+    border-bottom-style: solid;
+    border-bottom: 1px solid silver;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.c {
+    border-bottom-style: solid;
+    border-bottom: 1px solid silver;
+}
+.d {
+     border-radius: blue;
+     margin-inline: 500px;
+     font-size: 20px;
+     font: optional;  
+}
+h6{
+    color:blue;
+}
+img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    /*ŠEKIII VOLIM TE*/
+    float: left;
+    padding-right:5px;
+}
+button {
+    margin-left: 500px;
+    background-color: blue;
+    color:white;
+}
