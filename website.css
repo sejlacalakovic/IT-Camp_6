@@ -1,0 +1,101 @@
+.prvired { 
+    display: flex;
+    flex-direction: row;
+}
+
+.prvired { 
+    width: 100%;
+}
+
+.slikajedan{width: 800px;
+    height:600px;
+}
+
+.levideo { 
+    width: 800px; 
+} 
+
+.prvitekst { 
+    padding-left: 250px;
+    padding-top: 100px;
+    width: 370px;
+}   
+
+.drugitekst { 
+    padding-left: 230px;
+    width: 370px;
+}
+
+.drugaslika { 
+    padding-left: 180px;
+    padding-top: 20px;
+    width: 370px;
+}
+
+.drugired { 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.slikatri { 
+    width: 705px;
+    height:600px;
+}
+
+.slikacetiri {
+    padding-top: 130px;
+    padding-left:100px;
+}
+
+.trecired {
+    display: flex;
+    flex-direction: row;
+}
+
+.petaslika { 
+    width: 700px;
+    height: 700px;
+}
+
+.sestaslika { 
+    width: 700px;
+    padding-left: 70px;
+    padding-top: 90px;
+}
+
+.trecitekst {
+    width: 100px;
+}
+
+.redcetiri {
+     display: flex;
+    flex-direction: row;
+    }
+
+.slikadevet { 
+    width: 800px;
+    height: 500px;
+    }
+
+.cetvrtitekst { 
+    position: relative;
+    right: 500px; 
+}
+
+.redpet { 
+    display: flex;
+    flex-direction: row;
+}
+
+.slikadeset { 
+    width: 700px;
+    height: 500px;
+}
+
+.slikajedanaest {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    width: 200px;
+}

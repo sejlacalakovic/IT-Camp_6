@@ -1,0 +1,37 @@
+.prvi {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    color: black;
+    padding: 30px;
+}
+.drugi {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    padding-left:  100px;
+}
+.treci {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+}
+.cetvrti {
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    color: white;
+
+
+}
+.peti {
+    border: 1px solid black;
+    border-radius:5px ;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
