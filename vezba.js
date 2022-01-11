@@ -313,14 +313,65 @@
 // }
 
 
- moja_lozinka = "shelly";
+//  moja_lozinka = "shelly";
 
- kor_lozinka = prompt("Unesite lozinku");
+//  kor_lozinka = prompt("Unesite lozinku");
 
- while (moja_lozinka !== kor_lozinka) {
-     kor_lozinka = prompt("Pogresna lozinka pokusajte ponovo: ");
+//  while (moja_lozinka !== kor_lozinka) {
+//      kor_lozinka = prompt("Pogresna lozinka pokusajte ponovo: ");
 
- }
- alert("Tacna lozinka")
+//  }
+//  alert("Tacna lozinka")
+
+// _x = prompt(
+//     "izaberite jednu od racunskih operacija:    1. (+)    2. (-)    3. (*)    4. (/)     5. (Izlaz iz programa)"
+//   );
+//   rezultat = 0;
+//   while ("1" === x) {
+//     i = Number(prompt("Unesite prvi broj:"));
+//     j = Number(prompt("Unesite drugi broj :"));
+//     rezultat = i + j;
+//     console.log("Zbir ova dva broja je", rezultat);
+//     break;
+//   }
+//   while ("2" === x) {
+//     i = Number(prompt("Unesite prvi broj:"));
+//     j = Number(prompt("Unesite drugi broj :"));
+//     rezultat = i - j;
+//     console.log("Razlika ova dva broja je:", rezultat);
+//     break;
+//   }
+//   while ("3" === x) {
+//     i = Number(prompt("Unesite prvi broj:"));
+//     j = Number(prompt("Unesite drugi broj :"));
+//     rezultat = i * j;
+//     console.log("Proizvod ova dva broja je:", rezultat);
+//     break;
+//   }
+//   while ("4" === x) {
+//     i = Number(prompt("Unesite prvi broj:"));
+//     j = Number(prompt("Unesite drugi broj :"));
+//     rezultat = i / j;
+//     console.log("Kolicnik ova dva broja je:", rezultat);
+//     break;
+//   }
+//   while ("5" === x) {
+//     break;
+//   }
+
+ucenici = [];
+
+brUc = Number(prompt("broj ucenika"));
+
+for (let i = 0; i < brUc; i++) {
+    visUc = Number(prompt("visina ucenika "));
+    ucenici.push(visUc);
+
+}
+
+console.log(ucenici);
+
+
+// pop- oduzima poslednji element iz niza; push- dodaje poslednji element iz niza.
 
 
