@@ -359,19 +359,137 @@
 //     break;
 //   }
 
-ucenici = [];
-
-brUc = Number(prompt("broj ucenika"));
-
-for (let i = 0; i < brUc; i++) {
-    visUc = Number(prompt("visina ucenika "));
-    ucenici.push(visUc);
-
-}
-
-console.log(ucenici);
-
+//
+//
 
 // pop- oduzima poslednji element iz niza; push- dodaje poslednji element iz niza.
 
+//
+ 
 
+//  niz=[];
+
+//  for (let i = 1; i <= 10; i++) {
+//     //  niz [i] = i + 1;
+//      niz.push(i+1)
+//  }
+
+//  for (let i = 1; i <= 10; i++) {
+//      niz [i]=niz[i]*3;
+//  }
+ 
+//  print("ispis niza");
+//  for (let i = 1; i <= 10; i++){
+//  console.log(i);
+// }
+
+
+////////////////////////////////////////////////////
+
+//  niz=[];
+//  zbir=0;
+
+//  for (let i = 1; i <= niz.length; i++) {
+//      niz[i]=i+1;
+//  }
+
+//  for (let i = 1; i <= niz.length; i++) {
+//      if (niz[i]%2===0){
+//         zbir=zbir+niz[i];
+//      }
+// }
+
+
+
+//  for (let i = 1; i <= niz.length; i++) {
+//     console.log(niz[i]);
+//  }
+
+
+
+
+// sum = 0;
+// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let i = 1; i <= niz.length; i++) {
+//   if (i % 2 === 0) {
+//     sum += i;
+//   }
+// }
+// console.log(sum);
+
+
+
+//  sum = 0;
+//  const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//  for (let i = 1; i <= niz.length; i++) {
+//    {
+//      sum = i * 3;
+//     console.log(sum);
+//    }
+//  }
+
+
+
+
+// const niz1 =[];
+// const niz2 =[1, 2, 3, 4, 5];
+// for (let i = 1; niz1 <= 5; i++) {
+//     niz1[i] = ("unesite niz");
+// }
+// j= 0;
+// for (let i = 1; niz2 <= 5; i++) {
+// niz2[i]=niz1[i];
+// j=j+1;
+// }
+//  console.log("ispis niza");
+// for (let i = 1; niz2 <= 5; i++) {
+//     niz2[i];  
+// }
+ 
+
+
+// niz1 = [1, 5, 10, 15, 20, 25, 30];
+// niz2 = [];
+
+// console.log(niz1);
+// console.log(niz2);
+
+// for (let i = 0; i < niz1.length; i++) {
+// niz2.push(niz1[i]);
+    
+// }
+
+// niz = [];
+
+// ZADATAK MOZEMO RESITI NA OVA DVA NACINA.
+
+// nizl = niz1.lenght;
+
+// for (let i = 0; i < nizl.length; i++) {
+    // el niz1.pop();
+//     niz2.unshift(el);
+
+// }
+
+// console.log(niz1);
+// console.log(niz2);
+
+
+
+a = [ [1, 2, 2, 1],
+    [5, 7, 10, 1],
+    [9, 3, 2, 3,],
+    [8, 7, 4, 5,],
+    [2, 7, 8, 1] ];
+
+for (let i =0; i < a.lenght; i++) {
+    console.log(a[i]);
+}
+   
+
+    // for (let i = 0; i < a.lenght; i++) {
+    //     console.log(a[i]);
+    //     for (let j = 0; j < row.lenght; i++)
+            
+    //     }
+    // }
