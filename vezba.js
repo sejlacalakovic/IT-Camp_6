@@ -476,20 +476,92 @@
 
 
 
-a = [ [1, 2, 2, 1],
-    [5, 7, 10, 1],
-    [9, 3, 2, 3,],
-    [8, 7, 4, 5,],
-    [2, 7, 8, 1] ];
+// a = [ [1, 2, 2, 1],
+//     [5, 7, 10, 1],
+//     [9, 3, 2, 3,],
+//     [8, 7, 4, 5,],
+//     [2, 7, 8, 1] ];
 
-for (let i =0; i < a.lenght; i++) {
-    console.log(a[i]);
-}
+// for (let i = 0; i < a.lenght; i++) {
+//     console.log(a[i]);
+// }
    
 
     // for (let i = 0; i < a.lenght; i++) {
-    //     console.log(a[i]);
-    //     for (let j = 0; j < row.lenght; i++)
-            
+    //     const row a[i];
+    // red = "";
+    //     for (let j = 0; j < row.lenght; i++) {
+    //      const el = row[j];
+    // red += el + "\t";
     //     }
+    // console.log(red);
     // }
+
+
+//     a = [
+//           [ 2, 3, 4, 5]
+//           [9, 12, 13, 6]
+//           [13, 5, 6, 8]
+//           [12, 2, 5, 6] 
+// ];
+
+
+//  for (let i = 0; i < a.lenght; i++) {
+//          for (let j = 0; j < a[i].lenght; j++) {
+// if (i +j === a.lenght - 1) {
+// a[i][j] = "\\";
+//          }
+//         }
+//         console.log(a[i]);
+//   }
+
+
+
+
+/////////////////////////////////////////////////////
+
+// console.log(niz2.includes(niz1[0]));
+
+// console.log(niz2.includes(niz1[1]));
+
+// console.log(niz2.includes(niz1[2]));
+
+////////////////////////////////////////////////////
+
+// niz1 = [1, 2, 3];
+// niz2 = [100, 2, 1, 10];
+// niz3 = [];
+
+
+// for (let i = 0; i < niz1.length; i++) {
+//     if (!niz2.includes(niz1[i])) {
+//         console.log("ne nalazi se", niz1[i]);
+//         niz3.push(niz1[i]);
+//     }
+// }
+
+
+
+// for (let i = 0; i < niz2.length; i++) {
+//     if (!niz1.includes(niz2[i])) {
+//         console.log("ne nalazi se", niz2[i]);
+//         niz3.push(niz2[i]);
+//     }
+// }
+
+// console.log(niz3);
+
+
+
+niz1 = [1, 2, 3];
+niz2 = [2, 30, 1];
+
+for (let i = 0; i < niz1.length; i++) {
+    if (!niz2.includes(niz1[i])) {
+        niz2.push(niz1[i])
+    }
+
+}
+   
+console.log(niz2);
+    
