@@ -365,7 +365,7 @@
 // pop- oduzima poslednji element iz niza; push- dodaje poslednji element iz niza.
 
 //
- 
+
 
 //  niz=[];
 
@@ -377,7 +377,7 @@
 //  for (let i = 1; i <= 10; i++) {
 //      niz [i]=niz[i]*3;
 //  }
- 
+
 //  print("ispis niza");
 //  for (let i = 1; i <= 10; i++){
 //  console.log(i);
@@ -445,7 +445,7 @@
 // for (let i = 1; niz2 <= 5; i++) {
 //     niz2[i];  
 // }
- 
+
 
 
 // niz1 = [1, 5, 10, 15, 20, 25, 30];
@@ -456,7 +456,7 @@
 
 // for (let i = 0; i < niz1.length; i++) {
 // niz2.push(niz1[i]);
-    
+
 // }
 
 // niz = [];
@@ -466,7 +466,7 @@
 // nizl = niz1.lenght;
 
 // for (let i = 0; i < nizl.length; i++) {
-    // el niz1.pop();
+// el niz1.pop();
 //     niz2.unshift(el);
 
 // }
@@ -485,17 +485,17 @@
 // for (let i = 0; i < a.lenght; i++) {
 //     console.log(a[i]);
 // }
-   
 
-    // for (let i = 0; i < a.lenght; i++) {
-    //     const row a[i];
-    // red = "";
-    //     for (let j = 0; j < row.lenght; i++) {
-    //      const el = row[j];
-    // red += el + "\t";
-    //     }
-    // console.log(red);
-    // }
+
+// for (let i = 0; i < a.lenght; i++) {
+//     const row a[i];
+// red = "";
+//     for (let j = 0; j < row.lenght; i++) {
+//      const el = row[j];
+// red += el + "\t";
+//     }
+// console.log(red);
+// }
 
 
 //     a = [
@@ -553,15 +553,127 @@
 
 
 
-niz1 = [1, 2, 3];
-niz2 = [2, 30, 1];
+//  niz1 = [1, 2, 3];
+//  niz2 = [2, 30, 1];
 
-for (let i = 0; i < niz1.length; i++) {
-    if (!niz2.includes(niz1[i])) {
-        niz2.push(niz1[i])
-    }
+//  for (let i = 0; i < niz1.length; i++) {
+//      if (!niz2.includes(niz1[i])) {
+//          niz2.push(niz1[i])
+//      }
 
+//  }
+
+//  console.log(niz2);
+
+
+
+//////////////////////////////////////////
+// splice () 
+/////////////////////////////////////////
+
+
+
+// function move(arr, old_index, new_index) { 
+//     while (old_index < 0) {
+//          old_index += arr.length; 
+//         }
+//          while (new_index < 0) {
+//               new_index += arr.length;
+//              }
+//               if (new_index >= arr.length) {
+//                    var k = new_index - arr.length; 
+//                    while ((k--) + 1) {
+//                         arr.push(undefined);
+//                      }
+//                      } 
+//                      arr.splice(new_index, 0, arr.splice(old_index, 1)[0]); return arr; 
+//                     } 
+// console.log(move([10, 20, 30, 40, 50], 0, 2)); 
+// console.log(move([10, 20, 30, 40, 50], -1, -2))
+
+
+
+// var1 = {}     number, string, boolean,
+
+// console.log(typeof var1);
+
+
+
+//  arr = [
+//      ["a", 1, true],
+//      ["b", 2, false],
+//  ];
+
+
+
+////////////////////////////////
+// [["a", "b"], [1, 2], [true, false]]
+///////////////////////////////
+
+
+
+/////////////////////////////////
+// [["a", "b"], [1, 2], [true]]
+////////////////////////////////
+
+// arr2 = [
+//     ["a", 1, true],
+//     ["b", 2],
+// ];
+
+// niz = [[], [], []];
+
+// for (let i = 0; i < arr.length; i++) {
+
+// for (let j = 0; j < arr.length; j++) {
+
+// if (typeof arr[i][j] === "string") {
+//     niz1[0].push(arr[i][j]);
+
+// } else if (typeof arr[i][j] === "number") {
+//     niz1[1].push(arr[i][j]);
+
+// } else if (typeof arr[i][j] === "boolean") {
+//     niz1[2].push(arr[i][j]);
+// }
+// }
+// }
+// console.log(niz1);
+
+
+
+// spoljasna for petlja ce da se iterira 2 puta
+     // for (let i = 0; i < 2; i++) {
+// unutrasnja for petlja ce da se iterira 2 puta 
+     // for (let j = 0; j < 3; j++) {
+// zvak 
+     // console.log(arr[i][j]);
+  //   }
+// }
+
+
+// arr = [58, "", "abcd", true, null, false, 0];
+// res = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (Boolean(arr[i])) {
+//         res.push(arr[i]);
+//     }
+// }
+// console.log(res);
+
+// [58, "abcd",true]
+
+
+arr = ["b", 6, "a", "q", 7, 2];
+arr1 = [];
+for (let i = 0; i < arr.length; i++) {
+  if ( Number(arr[i])) {
+      arr1.unshift(arr[i]);
+  } else if (String(arr[i])) {
+      arr1.push(arr[i]);
+  }
 }
-   
-console.log(niz2);
-    
+console.log(arr1);
+
+// [2, 6, 7, "a", "b", "q"]
