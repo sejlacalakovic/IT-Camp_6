@@ -79,15 +79,50 @@
 // dodati na kraju niza sve nule.
 
 
-data = [3, 24, 54, 123, 32, 63]
+// data = [3, 24, 54, 123, 32, 63]
 
-function calculateAverage(niz) {
-sum = 0;
-for (el of niz) {
-    sum += el;
+// function calculateAverage(niz) {
+// sum = 0;
+// for (el of niz) {
+//     sum += el;
+// }
+// console.log("Average is:", Math.ceil(sum/niz.length));
+
+
+// }
+// calculateAverage(data);
+
+
+// function capitaliseString() {
+//     let fox = "the quick brown fox";
+//     console.log(fox);
+
+//     fox = fox.split(" ");
+
+//     for (let i = 0; i < fox.length; i++) {
+
+// let rec = fox[i];
+// rec = rec.split("");
+
+// rec[0] = rec[0].toUpperCase();
+
+// rec = rec.join("");
+
+// fox[i] = rec;
+
+//     }
+//     fox = fox.join("");
+//     console.log(fox);
+// }
+
+// capitaliseString();
+
+
+function digitize(n) {
+    n = n.toString()
+    arr = []
+    for (i = n.length - 1; i >= 0; i--) {
+        arr.push(parseInt(n[i]))
+    }
+    return arr
 }
-console.log("Average is:", Math.ceil(sum/niz.length));
-
-
-}
-calculateAverage(data);
