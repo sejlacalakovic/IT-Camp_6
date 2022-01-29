@@ -118,11 +118,148 @@
 // capitaliseString();
 
 
-function digitize(n) {
-    n = n.toString()
-    arr = []
-    for (i = n.length - 1; i >= 0; i--) {
-        arr.push(parseInt(n[i]))
-    }
-    return arr
-}
+// function digitize(n) {
+//     n = n.toString()
+//     arr = []
+//     for (i = n.length - 1; i >= 0; i--) {
+//         arr.push(parseInt(n[i]))
+//     }
+//     return arr
+// }
+
+
+// forEach - PROLAZI KROZ NJIZ SVE DOK IMA ELEMENATA U NJEMU.
+
+// prvi macin
+// function sayHello() {
+//     console.log("hello");
+// }
+//    data = [1, 2, 3, 4, 5, 6]
+
+//    data.forEach(sayHello)
+
+    
+// drugi nacin
+// function sayHello() {}
+
+// a = function ()  {
+//     console.log("Hello");
+// };
+
+// a();
+
+
+// treci nacin 
+// b = () => {
+//     console.log("Hello");
+// };
+// b();
+
+// data = [1, 2, 3, 4, 5, 6]
+// data.forEach(function () {
+//        console.log("hello");
+//     });
+    
+    
+
+// data = [1, 2, 3, 4, 5, 6];
+
+// data.forEach((a, i, c) => {
+//     console.log(a, "je na indeksu:", i);
+// });
+
+
+ // MAP - PRIMENJUJE NA SVAKU FUNKCIJU ELEMENT I VRACA
+
+
+// data = [1, 2, 3, 4, 5, 6];
+
+// novi = data.map((el, i) => {
+// return el + i;
+// });
+// console.log(data);
+// console.log(novi);
+
+
+// FILTER - DOBIJA FUNKCIJU, NA OSNOVU USLOVA
+// ON NAM VRACA TAJ ELEMENT
+
+// data = [1, 2, 3, 4, 5, 6];
+// novi = data.filter((el) => {
+//     return el > 1;
+// });
+// console.log(data);
+// console.log(novi);
+
+ 
+// saljemo funkciju SOME I ONA nam vraca da li makar jedan
+// element ispunjava uslov (true or folse)
+
+// data = [1, 2, 3, 4, 5, 6];
+// novi = data.some((el) => {
+// return el > -3;
+// });
+// console.log(novi);
+
+
+// data = [1, 2, 3, 4, 5, 6];
+
+// novi = data.map((el, i) => {
+// if (el > 3) {
+//     return 3;
+// }
+// });
+// console.log(novi);
+
+
+// data = [1, 2, 3, 4, 5, 6];
+
+// a = data.find((el) => {
+// return el > 3;
+// });
+// console.log(a);
+
+
+// data = [2, 5, 34, 65, 43, 52, 98, 23, 66];
+
+// parni = data.filter((el) => {
+// return el % 2 ===0;
+// });
+// console.log(parni);
+// ispisati sve parne brojeve
+
+
+// data = [2, 5, 34, 65, 43, 52, 98, 23, 66];
+
+// parni = data.map((el) => {
+// if (el % 2 === 0) {
+//     return el;
+// }else {
+//     return 0;
+// }
+// });
+//gde su neparni brojevi zameniti nulom
+
+
+
+// data = [2, 5, 34, 65, 43, 52, 98, 23, 66];
+
+// novi = data.some((el) => {
+// return el > 90;
+// });
+// console.log(novi);
+
+//da li su svi brojevi veci od broja 90
+
+
+// function countPositivesSumNegatives(input) {
+//     arr = [0,0]
+//       input.forEach((el) =>{
+//         if (el>0) {
+//           arr[0]++
+//         }else {
+//           arr [1]+=el
+//         }
+//       })
+//     return arr;
+//       }
