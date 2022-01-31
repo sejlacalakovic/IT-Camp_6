@@ -266,14 +266,24 @@
 
 
 //(map)
-var osobe = [
-    {ime : "Sara", prezime: "Juka"},
-    {ime : "Lena", prezime: "Pantic"},
-    {ime : "Mina", prezime: "Jovic"}
-];
+// var osobe = [
+//     {ime : "Sara", prezime: "Juka"},
+//     {ime : "Lena", prezime: "Pantic"},
+//     {ime : "Mina", prezime: "Jovic"}
+// ];
 
-function napraviPunoIme(osoba,index) {
-    var punoIme = [osoba.ime,osoba.prezime].join(" ");
-    return punoIme;
-}
-console.log(osobe.map(napraviPunoIme));
+// function napraviPunoIme(osoba,index) {
+//     var punoIme = [osoba.ime,osoba.prezime].join(" ");
+//     return punoIme;
+// }
+// console.log(osobe.map(napraviPunoIme));
+
+//(indexOf)
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+
+console.log(beasts.indexOf('bison', 2));
+
+
+console.log(beasts.indexOf('giraffe'));
