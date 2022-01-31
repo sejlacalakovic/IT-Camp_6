@@ -278,12 +278,28 @@
 // }
 // console.log(osobe.map(napraviPunoIme));
 
-//(indexOf)
-const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
-
-console.log(beasts.indexOf('bison'));
-
-console.log(beasts.indexOf('bison', 2));
 
 
-console.log(beasts.indexOf('giraffe'));
+// //(indexOf)
+// const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+// console.log(beasts.indexOf('bison'));
+
+// console.log(beasts.indexOf('bison', 2));
+
+
+// console.log(beasts.indexOf('giraffe'));
+
+
+//(find)
+var korpa = [
+    {imeVoca: 'banana', kolicina: 0},
+    {imeVoca: 'jabuka', kolicina: 2},
+    {imeVoca: 'visnja', kolicina: 5}
+];
+
+function daliImaVoca(vocka) {
+    return vocka.kolicina > 0 ;
+}
+var poslastice = korpa.find(daliImaVoca);
+console.log("Korpa nije prazna, ima " + poslastice.imeVoca);
