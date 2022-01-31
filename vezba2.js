@@ -338,3 +338,39 @@
 
 
 
+//(filter)
+// var users = [
+//     {
+//       "name": "Mina",
+//       "age": 20,
+//       "email": "mina@gmail.com"
+//     },
+//     {
+//       "name": "Sara",
+//       "age": 30,
+//       "email": "sara@gmail.com"
+//     },
+//     {
+//       "name": "Jana",
+//       "age": 29,
+//       "email": "jana@gmail.com"
+//     },
+//     {
+//       "name": "Luka",
+//       "age": 19,
+//       "email": "luka@gmail.com"
+//     }
+//   ];
+  
+//   // Filtriranje vraca: niz objekata koji zadovoljavaju uslov
+//   var sortedByAge = users.filter(function(el){
+//       return el.age >= 30;
+//   });
+  
+//   //Stampanje imena korisnika iz objekata koji su zadovoljili uslov
+//   sortedByAge.forEach(function(element) {
+//       console.log(element.name);
+//   });         // Vraca: "Mina" "Luka"
+
+
+
