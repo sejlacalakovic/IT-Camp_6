@@ -291,15 +291,50 @@
 // console.log(beasts.indexOf('giraffe'));
 
 
-//(find)
-var korpa = [
-    {imeVoca: 'banana', kolicina: 0},
-    {imeVoca: 'jabuka', kolicina: 2},
-    {imeVoca: 'visnja', kolicina: 5}
-];
+// //(find)
+// var korpa = [
+//     {imeVoca: 'banana', kolicina: 0},
+//     {imeVoca: 'jabuka', kolicina: 2},
+//     {imeVoca: 'visnja', kolicina: 5}
+// ];
 
-function daliImaVoca(vocka) {
-    return vocka.kolicina > 0 ;
-}
-var poslastice = korpa.find(daliImaVoca);
-console.log("Korpa nije prazna, ima " + poslastice.imeVoca);
+// function daliImaVoca(vocka) {
+//     return vocka.kolicina > 0 ;
+// }
+// var poslastice = korpa.find(daliImaVoca);
+// console.log("Korpa nije prazna, ima " + poslastice.imeVoca);
+
+
+
+//(forEach)
+// nekiNiz.forEach(function (currentValue, index, array) {
+//     //neki proracun
+// }, [thisArg]);
+
+
+
+// var nekiNiz = ['a', 'b', 'c'];
+
+// nekiNiz.forEach(function(element) {
+//     console.log(element);
+// });
+//  //Vraca: "a" "b" "c"
+
+
+//  var nekiNiz = ['a', 'b', 'c'];
+
+//  nekiNiz.forEach(function(element, index, prosledjen_niz) {
+//       console.log(prosledjen_niz[index]);
+//  });
+//   //Vraca: "a" "b" "c"
+
+
+//   function callbackFunkcija(element, index, array) {
+//     console.log('a[' + index + '] = ' + element);
+//   }
+  
+//   [2, 5, , 9].forEach(callbackFunkcija);  
+//     // Vraća: a[0] = 2   a[1] = 5   a[3] = 9 
+
+
+
