@@ -169,7 +169,7 @@
 // });
 
 
- // MAP - PRIMENJUJE NA SVAKU FUNKCIJU ELEMENT I VRACA
+ // MAP - PRIMENJUJE NA SVAKU FUNKCIJU ELEMENT I VRACA SVAKI ELEMENT NIZA
 
 
 // data = [1, 2, 3, 4, 5, 6];
@@ -263,3 +263,17 @@
 //       })
 //     return arr;
 //       }
+
+
+//(map)
+var osobe = [
+    {ime : "Sara", prezime: "Juka"},
+    {ime : "Lena", prezime: "Pantic"},
+    {ime : "Mina", prezime: "Jovic"}
+];
+
+function napraviPunoIme(osoba,index) {
+    var punoIme = [osoba.ime,osoba.prezime].join(" ");
+    return punoIme;
+}
+console.log(osobe.map(napraviPunoIme));
