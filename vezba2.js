@@ -380,13 +380,24 @@
 // }, [thisArg]);
 
 
-var osobe = [19, 21, 32, 16, 35],
-istinitost = osobe.every(function(item, index, array){
-        return item>=18;
-});    // Vraca True ili False
+// var osobe = [19, 21, 32, 16, 35],
+// istinitost = osobe.every(function(item, index, array){
+//         return item>=18;
+// });    // Vraca True ili False
 
-if (istinitost){
-   console.log("Svi su punoletni");
-} else {
-   console.log ("Neko nije punoletan!");
+// if (istinitost){
+//    console.log("Svi su punoletni");
+// } else {
+//    console.log ("Neko nije punoletan!");
+// }
+
+
+
+
+//(some)
+const ages = [8, 15, 28, 39];
+
+ages.some(checkAdult);
+function checkAdult(age) {
+  return age > 28;
 }
