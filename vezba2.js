@@ -374,3 +374,7 @@
 
 
 
+//(every)
+izvorniNiz.every(function (currentValue, index, array) {
+    //neki uslov
+}, [thisArg]);
