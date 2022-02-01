@@ -404,13 +404,43 @@
 
 
 
-function isNegative(element, index, array) {
-    return element < 0;
+// function isNegative(element, index, array) {
+//     return element < 0;
+//   }
+  
+//   const int8 = new Int8Array([-10, 20, -30, 40, -50]);
+//   const positives = new Int8Array([10, 20, 30, 40, 50]);
+  
+//   console.log(int8.some(isNegative));
+//   // expected output: true
+  
+//   console.log(positives.some(isNegative));
+
+
+
+// function powerOfTwo(n) {
+//     pomArr = [];
+
+//     for (let i = 0; i <= n; i++ ) {
+//         pomArr.push(2 ** i);
+//     }
+//     return pomArr;
+// }
+
+// rez = powerOfTwo(3);
+// rez1 = powerOfTwo(5);
+// rez2 = powerOfTwo(10);
+
+
+
+
+
+const reverseSeq = n => {
+    const result = [];
+  
+  for(let i = n; i > 0; i -= 1) {
+    result.push(i);
   }
   
-  const int8 = new Int8Array([-10, 20, -30, 40, -50]);
-  const positives = new Int8Array([10, 20, 30, 40, 50]);
-  
-  console.log(int8.some(isNegative));
-  
-  console.log(positives.some(isNegative));
+  return result;
+};
