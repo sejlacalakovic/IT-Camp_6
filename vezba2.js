@@ -395,9 +395,22 @@
 
 
 //(some)
-const ages = [8, 15, 28, 39];
+// const ages = [8, 15, 28, 39];
 
-ages.some(checkAdult);
-function checkAdult(age) {
-  return age > 28;
-}
+// ages.some(checkAdult);
+// function checkAdult(age) {
+//   return age > 28;
+// }
+
+
+
+function isNegative(element, index, array) {
+    return element < 0;
+  }
+  
+  const int8 = new Int8Array([-10, 20, -30, 40, -50]);
+  const positives = new Int8Array([10, 20, 30, 40, 50]);
+  
+  console.log(int8.some(isNegative));
+  
+  console.log(positives.some(isNegative));
