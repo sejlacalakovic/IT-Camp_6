@@ -460,12 +460,32 @@
 //  console.log();
 
 
-function pillars(num_pill, dist, width) {
-for (let i = 1; i < num_pill; i++){
-if(num_pill < 1) {
-    return 0;
-    }
-    return num_pill * ((dist * 100) + width) - (width * 2) - (dist * 100);
- }
-}
+// function pillars(num_pill, dist, width) {
+// for (let i = 1; i < num_pill; i++){
+// if(num_pill < 2) {
+//     return 0;
+//     }
+//     return num_pill * ((dist * 100) + width) - (width * 2) - (dist * 100);
+//  }
+// }
  
+
+// function pillars(num_pill, dist, width) {
+//     if (num_pill <= 1) {
+//         return 0;
+//     }
+//     if (dist < 10 || dist > 30) {
+//         return;
+//     }
+//     if (width < 10 || width > 50) {
+//         return;
+//     }
+//     return (num_pill - 1) * (dist * 100 + width) - width;
+// }
+
+// // rez = pillars(2, 20, 25);
+// rez = pillars(1, 10, 10);
+
+// console.log(rez);
+// console.log(pillars(2, 20, 25));
+// console.log(pillars(11, 15, 30));
