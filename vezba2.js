@@ -431,16 +431,41 @@
 // rez1 = powerOfTwo(5);
 // rez2 = powerOfTwo(10);
 
+// console.log(rez);
+// console.log(rez1);
+// console.log(rez2);
 
 
 
-
-const reverseSeq = n => {
-    const result = [];
+//  const reverseSeq = n => {
+//      const result = [];
   
-  for(let i = n; i > 0; i -= 1) {
-    result.push(i);
-  }
+//    for(let i = n; i > 0; i -= 1) {
+//      result.push(i);
+//    }
   
-  return result;
-};
+//    return result;
+//  };
+
+
+//  function reservedSeq(n) {
+//           pomArr = [];
+//   for (let i = n; i < 0; i--) {
+//          pomArr.push(i);
+        
+//      }
+//       return pomArr;   
+//      }
+//      rez = reservedSeq(4);
+//  console.log();
+
+
+function pillars(num_pill, dist, width) {
+for (let i = 1; i < num_pill; i++){
+if(num_pill < 1) {
+    return 0;
+    }
+    return num_pill * ((dist * 100) + width) - (width * 2) - (dist * 100);
+ }
+}
+ 
