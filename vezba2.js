@@ -489,3 +489,13 @@
 // console.log(rez);
 // console.log(pillars(2, 20, 25));
 // console.log(pillars(11, 15, 30));
+
+
+function symmetricPoint(p, q) {
+    return [2 * q[0] - p[0], 2 * q[1] - p[1]];
+  }
+  
+  const iceBrickVolume = (r, x, y) => 2 * r * r * (x - y);
+
+
+  
