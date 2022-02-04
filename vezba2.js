@@ -533,28 +533,47 @@
 // return num;
 // }
 
-
 // console.log(stray([1, 2, 1, 1, 1, 1, 1, 1]));
 // console.log(stray([1, 1, 17, 1, 1, 1, 1]));
 // console.log(stray([1, 1, 1, 1, 1, 1, 1]));
 
 
 
-function inverseSlice(items, a, b) {
-    pomArr = items.slice(0, a);
+// function inverseSlice(items, a, b) {
+//     pomArr = items.slice(0, a);
 
-    pomarr2 = items.slice(b);
+//     pomarr2 = items.slice(b);
 
-    pomArr = pomArr.concat(items.slice(b));
+//     pomArr = pomArr.concat(items.slice(b));
      
-    return pomArr;
-}
+//     return pomArr;
+// }
 
-console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4));
-console.log(inverseSlice([12, 14, 63, 72, 55, 24], 0, 3));
+// console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4));
+// console.log(inverseSlice([12, 14, 63, 72, 55, 24], 0, 3));
+
 // [12, 14, 55, 24]
 
 
+
+
+
+const removeConsecutiveDuplicates = (s) => {
+    pomArr =  s.split(" ");
+let rez = [];
+for (let i = 0; i < s.length; i++) {
+if (pomArr[i] !== pomArr[i + 1]) {
+rez.push(pomArr[i]);
+}
+}
+return rez;
+};
+
+console.log(removeConsecutiveDuplicates(
+    "alpha beta beta gamma gamma gamma delta alpha beta beta gammma gamma gamma delta")
+    );
+
+    // alpha beta gamma delta alpha beta gamma delta 
 
 
 
