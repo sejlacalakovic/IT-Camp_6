@@ -558,23 +558,35 @@
 
 
 
+// const removeConsecutiveDuplicates = (s) => {
+//     pomArr =  s.split(" ");
+// let rez = [];
+// for (let i = 0; i < s.length; i++) {
+// if (pomArr[i] !== pomArr[i + 1]) {
+// rez.push(pomArr[i]);
+// }
+// }
+// return rez;
+// };
+
+// console.log(removeConsecutiveDuplicates(
+//     "alpha beta beta gamma gamma gamma delta alpha beta beta gammma gamma gamma delta")
+//     );
+
+//     // alpha beta gamma delta alpha beta gamma delta 
+
+
+
 const removeConsecutiveDuplicates = (s) => {
-    pomArr =  s.split(" ");
-let rez = [];
-for (let i = 0; i < s.length; i++) {
-if (pomArr[i] !== pomArr[i + 1]) {
-rez.push(pomArr[i]);
-}
-}
-return rez;
+    pomArr = s.split(" ");
+    let rez = [];
+    for (let i = 0; i < s.length; i++) {
+        if (pomArr[i] !== pomArr[i + 1]) {
+            pez.push(pomArr[i]);
+        }
+    }
+    return rez.join(" ");
 };
-
-console.log(removeConsecutiveDuplicates(
-    "alpha beta beta gamma gamma gamma delta alpha beta beta gammma gamma gamma delta")
-    );
-
-    // alpha beta gamma delta alpha beta gamma delta 
-
 
 
 
