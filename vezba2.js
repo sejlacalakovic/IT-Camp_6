@@ -577,17 +577,74 @@
 
 
 
-const removeConsecutiveDuplicates = (s) => {
-    pomArr = s.split(" ");
-    let rez = [];
-    for (let i = 0; i < s.length; i++) {
-        if (pomArr[i] !== pomArr[i + 1]) {
-            pez.push(pomArr[i]);
-        }
-    }
-    return rez.join(" ");
-};
+
+
+// function nbYear(p0, percent, aug, p) {
+//     const percentage = percent / 100
+//     let result = p0
+//     let years = 0 while (result < p) {
+//         result += result * percentage + aug years
+//     }
+//     return years
+// }
 
 
 
 
+// function LargestPairSumInArray(arr) {
+//     let first, second;
+
+//     if (arr[0] > arr[1]) {
+
+//         first = arr[0];
+//         second = arr[1];
+//     }
+
+//     else {
+
+//         first = arr[1];
+//         second = arr[0];
+
+//     }
+
+
+
+//     for (let i = 2; i < arr.length; i++) {
+
+
+//         if (arr[i] > first) {
+
+//             second = first;
+
+//             first = arr[i];
+
+//         }
+//         else if (arr[i] > second &&
+
+//             arr[i] != first)
+
+//             second = arr[i];
+
+//     }
+//     return (first + second);
+
+// }
+
+
+
+
+// const removeConsecutiveDuplicates = (s) => {
+//     pomArr = s.split(" ");
+//     let rez = [];
+//     for (let i = 0; i < s.length; i++) {
+//         if (pomArr[i] !== pomArr[i + 1]) {
+//             pez.push(pomArr[i]);
+//         }
+//     }
+//     return rez.join(" ");
+// };
+
+
+
+
+ 
