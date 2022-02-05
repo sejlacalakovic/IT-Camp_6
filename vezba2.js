@@ -593,41 +593,24 @@
 
 // function LargestPairSumInArray(arr) {
 //     let first, second;
-
 //     if (arr[0] > arr[1]) {
-
 //         first = arr[0];
 //         second = arr[1];
 //     }
-
 //     else {
-
 //         first = arr[1];
 //         second = arr[0];
-
 //     }
-
-
-
 //     for (let i = 2; i < arr.length; i++) {
-
-
 //         if (arr[i] > first) {
-
 //             second = first;
-
 //             first = arr[i];
-
 //         }
 //         else if (arr[i] > second &&
-
 //             arr[i] != first)
-
 //             second = arr[i];
-
 //     }
 //     return (first + second);
-
 // }
 
 
@@ -645,6 +628,12 @@
 // };
 
 
-
-
  
+function nbYearU(p0, percent, aug, p) {
+    let n = 0;
+    while (p0 < p) {
+p0 = p0 +(p0 * percent) /100 +aug;
+n = n + 1;
+    }
+    return n;
+}
