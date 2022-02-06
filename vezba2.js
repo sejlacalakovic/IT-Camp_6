@@ -629,11 +629,32 @@
 
 
  
-function nbYearU(p0, percent, aug, p) {
-    let n = 0;
-    while (p0 < p) {
-p0 = p0 +(p0 * percent) /100 +aug;
-n = n + 1;
-    }
-    return n;
-}
+// function nbYearU(p0, percent, aug, p) {
+//     let n = 0;
+//     while (p0 < p) {
+// p0 = p0 +(p0 * percent) /100 +aug;
+// n = n + 1;
+//     }
+//     return n;
+// }
+
+
+
+niz = [11, 13, 4, 21, 18];
+
+for (let i = 0; i < niz.length; i++) {
+    for (let j = i + 1; j >= 0; j--) {
+        if (niz[j] < niz[j - 1]) {
+            // [niz[j], niz[j - 1]] = [niz[j - 1], niz[j]];
+            let pomVar = niz[j];
+            niz[j] = niz[j - 1];
+            niz[j - 1] = pomVar;
+        } else {
+            break;
+        }
+        }
+    } 
+
+
+    console.log(niz(niz.length - 1));
+  console.log(niz(niz.length - 2));
