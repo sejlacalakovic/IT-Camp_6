@@ -640,21 +640,44 @@
 
 
 
-niz = [11, 13, 4, 21, 18];
+// niz = [11, 13, 4, 21, 18];
 
-for (let i = 0; i < niz.length; i++) {
-    for (let j = i + 1; j >= 0; j--) {
-        if (niz[j] < niz[j - 1]) {
-            // [niz[j], niz[j - 1]] = [niz[j - 1], niz[j]];
-            let pomVar = niz[j];
-            niz[j] = niz[j - 1];
-            niz[j - 1] = pomVar;
-        } else {
-            break;
-        }
-        }
-    } 
+// for (let i = 0; i < niz.length; i++) {
+//     for (let j = i + 1; j >= 0; j--) {
+//         if (niz[j] < niz[j - 1]) {
+//             // [niz[j], niz[j - 1]] = [niz[j - 1], niz[j]];
+//             let pomVar = niz[j];
+//             niz[j] = niz[j - 1];
+//             niz[j - 1] = pomVar;
+//         } else {
+//             break;
+//         }
+//         }
+//     } 
 
 
-    console.log(niz(niz.length - 1));
-  console.log(niz(niz.length - 2));
+//     console.log(niz(niz.length - 1));
+//   console.log(niz(niz.length - 2));
+
+
+
+
+function addBinary(a, b) {
+    var sum = a + b,
+            binary = '';
+  
+    while ( sum > 0 ) {
+      binary = ( sum % 2 ) + binary;
+      sum = Math.floor( sum / 2 );
+    }
+  
+    return binary;
+  }
+  
+  console.log( addBinary( 1,2 ) ); //Should be 11
+  console.log( addBinary( 51,12 ) ); //Should be 111111
+  console.log( addBinary( 100, 0 ) ); //Should be 1100100
+  
+  
+  
+  }
