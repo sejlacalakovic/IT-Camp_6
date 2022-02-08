@@ -662,26 +662,22 @@
 
 
 
-function addBinary(a, b) {
-    var sum = a + b,
-            binary = '';
+// function addBinary(a, b) {
+//     var sum = a + b,
+//             binary = '';
   
-    while ( sum > 0 ) {
-      binary = ( sum % 2 ) + binary;
-      sum = Math.floor( sum / 2 );
-    }
+//     while ( sum > 0 ) {
+//       binary = ( sum % 2 ) + binary;
+//       sum = Math.floor( sum / 2 );
+//     }
   
-    return binary;
-  }
+//     return binary;
+//   }
   
-  console.log( addBinary( 1,2 ) ); //Should be 11
-  console.log( addBinary( 51,12 ) ); //Should be 111111
-  console.log( addBinary( 100, 0 ) ); //Should be 1100100
+//   console.log( addBinary( 1,2 ) ); //Should be 11
+//   console.log( addBinary( 51,12 ) ); //Should be 111111
+//   console.log( addBinary( 100, 0 ) ); //Should be 1100100
   
-
-
-
-
 
 
 
@@ -689,6 +685,38 @@ function addBinary(a, b) {
   // 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 
 
-  function addBinary(a,b) {
-    return (a + b).toString(2);
+  // function addBinary(a,b) {
+  //   return (a + b).toString(2);
+  // }
+
+
+
+  //youdontknowjs
+  // iife
+
+
+
+  //OBJEKTI - jedan blok odrdjenih varijabli koje imaju svoje vrednosti. 
+
+
+
+
+  covek1 = {
+    name: "sejla",
+    surname: "calakovic",
+   birhdate: "05.02.2001",
+   location: "NP",
   }
+
+
+  covek2 = { ...covek1};
+
+  console.log(covek1);
+  console.log(covek2);
+
+  covek2.name = "Novo ime!!!";
+
+  console.log("=================================");
+  console.log(covek1);
+  console.log(covek2);
+
