@@ -714,6 +714,11 @@
 
   covek2 = { ...covek1};
 
+
+//covek1 = poajdwiQJFq[dfwjQFWJ
+covek2 = covek1 //poajdwiQJFq[dfwjQFWJ
+
+
   // console.log(covek1);
   // console.log(covek2);
 
