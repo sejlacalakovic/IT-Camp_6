@@ -706,17 +706,26 @@
     surname: "calakovic",
    birhdate: "05.02.2001",
    location: "NP",
-  }
+   job: function() {
+     console.log("Doing some job");
+   },
+  };
 
 
   covek2 = { ...covek1};
 
-  console.log(covek1);
-  console.log(covek2);
+  // console.log(covek1);
+  // console.log(covek2);
 
-  covek2.name = "Novo ime!!!";
+  // covek2.name = "Novo ime!!!";
 
-  console.log("=================================");
-  console.log(covek1);
-  console.log(covek2);
+  // console.log("=================================");
+  // console.log(covek1);
+  // console.log(covek2);
 
+
+  console.log(Object.keys(covek1));
+  console.log(Object.values(covek2));
+
+
+  covek1.job();
