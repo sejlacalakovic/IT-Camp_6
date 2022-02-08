@@ -747,22 +747,31 @@ name: "sejla",
    birhdate: "05.02.2001",
  location: {
    contry: "SRB",
-city: "NP",
+city: {
+   cityName : "Novi Pazar",
+postcode: "36300",
     },
-   };
+   },
+  };
 
-
-   covek2 = { ...covek1, location: { ...covek1.location} };
+   covek2 = { ...covek1,
+     location: { ...covek1.location, 
+    city: { ...covek1.location.city 
+    },
+  },
+ };
 
    covek2.name = "novo ime";
 
    console.log(covek1);
    console.log(covek2);
 
+
 covek2.location.city = "VA";
 
-console.log("=====================================");
+
 console.log(covek1);
+console.log("=====================================");
 console.log(covek2);
 
 
