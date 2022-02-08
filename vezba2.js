@@ -709,7 +709,7 @@
 //     surname: "calakovic",
 //    birhdate: "05.02.2001",
 //    // location: "NP",
-//    loacation: "NP",
+//    location: "NP",
 //    // job = qhw1hawfjdo12i44r
 //    function() {
 //      console.log("Doing some job");
@@ -745,13 +745,24 @@ covek1 ={
 name: "sejla",
     surname: "calakovic",
    birhdate: "05.02.2001",
-   
- loacation: {
+ location: {
    contry: "SRB",
 city: "NP",
     },
    };
 
 
+   covek2 = { ...covek1, location: { ...covek1.location} };
+
+   covek2.name = "novo ime";
+
+   console.log(covek1);
+   console.log(covek2);
+
+covek2.location.city = "VA";
+
+console.log("=====================================");
+console.log(covek1);
+console.log(covek2);
 
 
