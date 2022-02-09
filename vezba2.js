@@ -741,37 +741,67 @@
 //   covek1.job(); //job- pokazivac
 
 
-covek1 ={
-name: "sejla",
-    surname: "calakovic",
-   birhdate: "05.02.2001",
- location: {
-   contry: "SRB",
-city: {
-   cityName : "Novi Pazar",
-postcode: "36300",
-    },
-   },
-  };
+// covek1 ={
+// name: "sejla",
+//     surname: "calakovic",
+//    birhdate: "05.02.2001",
+//  location: {
+//    contry: "SRB",
+// city: {
+//    cityName : "Novi Pazar",
+// postcode: "36300",
+//     },
+//    },
+//   };
 
-   covek2 = { ...covek1,
-     location: { ...covek1.location, 
-    city: { ...covek1.location.city 
-    },
+//    covek2 = { ...covek1,
+//      location: { ...covek1.location, 
+//     city: { ...covek1.location.city 
+//     },
+//   },
+//  };
+
+//    covek2.name = "novo ime";
+
+//    console.log(covek1);
+//    console.log(covek2);
+
+
+// covek2.location.city = "VA";
+
+
+// console.log(covek1);
+// console.log("=====================================");
+// console.log(covek2);
+
+
+
+
+var library = [ 
+  {
+      title: 'Bill Gates',
+      author: 'The Road Ahead',
+      readingStatus: true
   },
- };
+  {
+      title: 'Steve Jobs',
+      author: 'Walter Isaacson',
+      readingStatus: true
+  },
+  {
+      title: 'Mockingjay: The Final Book of The Hunger Games',
+      author: 'Suzanne Collins',
+      readingStatus: false
+  }];
 
-   covek2.name = "novo ime";
-
-   console.log(covek1);
-   console.log(covek2);
-
-
-covek2.location.city = "VA";
-
-
-console.log(covek1);
-console.log("=====================================");
-console.log(covek2);
-
-
+for (var i = 0; i < library.length; i++) 
+ {
+  var book = "'" + library[i].title + "'" + ' by ' + library[i].author + ".";
+  if (library[i].readingStatus) {
+    console.log("Already read " + book);
+  } else
+  {
+   console.log("You still need to read " + book);
+  }
+ }
+ 
