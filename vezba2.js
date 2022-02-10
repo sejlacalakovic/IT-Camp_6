@@ -838,29 +838,51 @@
 
 
 
-// class Car {
-//   constructor(name, year)
+// class Macka {
+// constructor(name, year, hairColor, weight) {
+//   this.name = name;
+//   this.year = year;
+//   this.hairColor =hairColor;
+//   this.weight = weight;
+// }  
 // }
-
-
-
-
-
-class Macka {
-constructor(name, year, hairColor, weight) {
-  this.name = name;
-  this.year = year;
-  this.hairColor =hairColor;
-  this.weight = weight;
-}  
-}
  
 
-m1 = new Macka("Coco", 2020, "black", "4kg" );
-console.log(m1);
+// m1 = new Macka("Coco", 2020, "black", "4kg" );
+// console.log(m1);
 
-m2 = new Macka("Cici", 1018, "siva", "2kg" );
-console.log(m2);
+// m2 = new Macka("Cici", 1018, "siva", "2kg" );
+// console.log(m2);
 
-m3 = new Macka("Reri", 2022, "narandzasta", "1,5kg");
-console.log(m3);
+// m3 = new Macka("Reri", 2022, "narandzasta", "1,5kg");
+// console.log(m3);
+
+
+a1 = {
+  name: "Sejla",
+  surname: "Calakovic",
+};
+
+a2 = {};
+// a2 = {
+//   Sejla: "name",
+//   Calakovic: "surname",
+// };
+
+
+// console.log(Object.keys(a1));
+// console.log(Object.values(a1));
+// console.log(Object.entries(a1));
+
+
+let flatObj = Object.entries(a1);
+
+for (let i = 0; i < flatObj.length; i++) {
+  console.log(flatObj[i]);
+
+ a2[flatObj[i][1]] = flatObj[i][0]; 
+}
+
+console.log(a1);
+console.log("===========================");
+console.log(a2);
