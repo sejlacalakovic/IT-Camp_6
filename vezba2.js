@@ -815,24 +815,52 @@
 
 
 
-class Car {
-  constructor(name, year) {
-    this.name = name;
-    this.name = year;
-}
-}
-
-
-// c1 = {
-//   name: "AUDI",
-//   year: "2010"
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+// }
 // }
 
 
-c1 = new Car("AUDI", 2010);
-c2 = new Car("Mercedes", 2020);
+// // // c1 = {
+// // //   name: "AUDI",
+// // //   year: "2010"
+// // // }
 
-console.log(c1);
-console.log(c2);
+
+// c1 = new Car("AUDI", 2010);
+// c2 = new Car("Mercedes", 2020);
+
+// console.log(c1);
+// console.log(c2);
 
 
+
+
+// class Car {
+//   constructor(name, year)
+// }
+
+
+
+
+
+class Macka {
+constructor(name, year, hairColor, weight) {
+  this.name = name;
+  this.year = year;
+  this.hairColor =hairColor;
+  this.weight = weight;
+}  
+}
+ 
+
+m1 = new Macka("Coco", 2020, "black", "4kg" );
+console.log(m1);
+
+m2 = new Macka("Cici", 1018, "siva", "2kg" );
+console.log(m2);
+
+m3 = new Macka("Reri", 2022, "narandzasta", "1,5kg");
+console.log(m3);
