@@ -696,7 +696,7 @@
 
 
 
-//OBJEKTI - jedan blok odrdjenih varijabli koje imaju svoje vrednosti. 
+//OBJEKTI - jedan blok odredjenih varijabli koje imaju svoje vrednosti. 
 
 
 
@@ -812,5 +812,27 @@
 // };
 // console.log(Object.keys(student)); 
 
+
+
+
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.name = year;
+}
+}
+
+
+// c1 = {
+//   name: "AUDI",
+//   year: "2010"
+// }
+
+
+c1 = new Car("AUDI", 2010);
+c2 = new Car("Mercedes", 2020);
+
+console.log(c1);
+console.log(c2);
 
 
