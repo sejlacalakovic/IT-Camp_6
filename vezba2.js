@@ -138,7 +138,7 @@
 
 //    data.forEach(sayHello)
 
-    
+
 // drugi nacin
 // function sayHello() {}
 
@@ -159,8 +159,8 @@
 // data.forEach(function () {
 //        console.log("hello");
 //     });
-    
-    
+
+
 
 // data = [1, 2, 3, 4, 5, 6];
 
@@ -169,7 +169,7 @@
 // });
 
 
- // MAP - PRIMENJUJE NA SVAKU FUNKCIJU ELEMENT I VRACA SVAKI ELEMENT NIZA
+// MAP - PRIMENJUJE NA SVAKU FUNKCIJU ELEMENT I VRACA SVAKI ELEMENT NIZA
 
 
 // data = [1, 2, 3, 4, 5, 6];
@@ -191,7 +191,7 @@
 // console.log(data);
 // console.log(novi);
 
- 
+
 // saljemo funkciju SOME I ONA nam vraca da li makar jedan
 // element ispunjava uslov (true or folse)
 
@@ -332,7 +332,7 @@
 //   function callbackFunkcija(element, index, array) {
 //     console.log('a[' + index + '] = ' + element);
 //   }
-  
+
 //   [2, 5, , 9].forEach(callbackFunkcija);  
 //     // Vraća: a[0] = 2   a[1] = 5   a[3] = 9 
 
@@ -361,12 +361,12 @@
 //       "email": "luka@gmail.com"
 //     }
 //   ];
-  
+
 //   // Filtriranje vraca: niz objekata koji zadovoljavaju uslov
 //   var sortedByAge = users.filter(function(el){
 //       return el.age >= 30;
 //   });
-  
+
 //   //Stampanje imena korisnika iz objekata koji su zadovoljili uslov
 //   sortedByAge.forEach(function(element) {
 //       console.log(element.name);
@@ -407,13 +407,13 @@
 // function isNegative(element, index, array) {
 //     return element < 0;
 //   }
-  
+
 //   const int8 = new Int8Array([-10, 20, -30, 40, -50]);
 //   const positives = new Int8Array([10, 20, 30, 40, 50]);
-  
+
 //   console.log(int8.some(isNegative));
 //   // expected output: true
-  
+
 //   console.log(positives.some(isNegative));
 
 
@@ -439,11 +439,11 @@
 
 //  const reverseSeq = n => {
 //      const result = [];
-  
+
 //    for(let i = n; i > 0; i -= 1) {
 //      result.push(i);
 //    }
-  
+
 //    return result;
 //  };
 
@@ -452,7 +452,7 @@
 //           pomArr = [];
 //   for (let i = n; i < 0; i--) {
 //          pomArr.push(i);
-        
+
 //      }
 //       return pomArr;   
 //      }
@@ -468,7 +468,7 @@
 //     return num_pill * ((dist * 100) + width) - (width * 2) - (dist * 100);
 //  }
 // }
- 
+
 
 // function pillars(num_pill, dist, width) {
 //     if (num_pill <= 1) {
@@ -494,7 +494,7 @@
 // function symmetricPoint(p, q) {
 //     return [2 * q[0] - p[0], 2 * q[1] - p[1]];
 //   }
-  
+
 //   const iceBrickVolume = (r, x, y) => 2 * r * r * (x - y);
 
 
@@ -545,7 +545,7 @@
 //     pomarr2 = items.slice(b);
 
 //     pomArr = pomArr.concat(items.slice(b));
-     
+
 //     return pomArr;
 // }
 
@@ -628,7 +628,7 @@
 // };
 
 
- 
+
 // function nbYearU(p0, percent, aug, p) {
 //     let n = 0;
 //     while (p0 < p) {
@@ -665,44 +665,44 @@
 // function addBinary(a, b) {
 //     var sum = a + b,
 //             binary = '';
-  
+
 //     while ( sum > 0 ) {
 //       binary = ( sum % 2 ) + binary;
 //       sum = Math.floor( sum / 2 );
 //     }
-  
+
 //     return binary;
 //   }
-  
+
 //   console.log( addBinary( 1,2 ) ); //Should be 11
 //   console.log( addBinary( 51,12 ) ); //Should be 111111
 //   console.log( addBinary( 100, 0 ) ); //Should be 1100100
-  
 
 
 
-  // 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
-  // 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
+
+// 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
+// 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 
 
-  // function addBinary(a,b) {
-  //   return (a + b).toString(2);
-  // }
-
-
-
-  //youdontknowjs
-  // iife
+// function addBinary(a,b) {
+//   return (a + b).toString(2);
+// }
 
 
 
-  //OBJEKTI - jedan blok odrdjenih varijabli koje imaju svoje vrednosti. 
+//youdontknowjs
+// iife
+
+
+
+//OBJEKTI - jedan blok odrdjenih varijabli koje imaju svoje vrednosti. 
 
 
 
 
 //   covek1 = {
- 
+
 //   //covek1 =  poajdwiQJFq[dfwjQFWJ;
 
 //     name: "sejla",
@@ -777,31 +777,40 @@
 
 
 
-var library = [ 
-  {
-      title: 'Bill Gates',
-      author: 'The Road Ahead',
-      readingStatus: true
-  },
-  {
-      title: 'Steve Jobs',
-      author: 'Walter Isaacson',
-      readingStatus: true
-  },
-  {
-      title: 'Mockingjay: The Final Book of The Hunger Games',
-      author: 'Suzanne Collins',
-      readingStatus: false
-  }];
+// var library = [
+//   {
+//     title: 'Bill Gates',
+//     author: 'The Road Ahead',
+//     readingStatus: true
+//   },
+//   {
+//     title: 'Steve Jobs',
+//     author: 'Walter Isaacson',
+//     readingStatus: true
+//   },
+//   {
+//     title: 'Mockingjay: The Final Book of The Hunger Games',
+//     author: 'Suzanne Collins',
+//     readingStatus: false
+//   }];
 
-for (var i = 0; i < library.length; i++) 
- {
-  var book = "'" + library[i].title + "'" + ' by ' + library[i].author + ".";
-  if (library[i].readingStatus) {
-    console.log("Already read " + book);
-  } else
-  {
-   console.log("You still need to read " + book);
-  }
- }
- 
+// for (var i = 0; i < library.length; i++) {
+//   var book = "'" + library[i].title + "'" + ' by ' + library[i].author + ".";
+//   if (library[i].readingStatus) {
+//     console.log("Already read " + book);
+//   } else {
+//     console.log("You still need to read " + book);
+//   }
+// }
+
+
+
+// var student = {
+//   name: "Dvid Rayy",
+//   sclaas: "VI",
+//   rollno: 12
+// };
+// console.log(Object.keys(student)); 
+
+
+
