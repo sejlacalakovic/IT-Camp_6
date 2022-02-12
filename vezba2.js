@@ -858,16 +858,16 @@
 // console.log(m3);
 
 
-a1 = {
-  name: "Sejla",
-  surname: "Calakovic",
-};
-
-a2 = {};
-// a2 = {
-//   Sejla: "name",
-//   Calakovic: "surname",
+// a1 = {
+//   name: "Sejla",
+//   surname: "Calakovic",
 // };
+
+// a2 = {};
+// // a2 = {
+// //   Sejla: "name",
+// //   Calakovic: "surname",
+// // };
 
 
 // console.log(Object.keys(a1));
@@ -875,14 +875,45 @@ a2 = {};
 // console.log(Object.entries(a1));
 
 
-let flatObj = Object.entries(a1);
+// let flatObj = Object.entries(a1);
 
-for (let i = 0; i < flatObj.length; i++) {
-  console.log(flatObj[i]);
+// for (let i = 0; i < flatObj.length; i++) {
+//   console.log(flatObj[i]);
 
- a2[flatObj[i][1]] = flatObj[i][0]; 
+//  a2[flatObj[i][1]] = flatObj[i][0]; 
+// }
+
+// console.log(a1);
+// console.log("===========================");
+// console.log(a2);
+
+
+
+// var student = {
+//     name: "David Rayy",
+//     sclaas: "VI",
+//     rollno: 12,
+//   };
+
+
+//   console.log(Object.keys(student)); 
+  
+
+
+a1 = {
+  name: "Sejla",
+  location:"NP",
+};
+
+
+function isContainProp(argObj, prop) {
+  let props = Object.keys(argObj);
+
+  if (props.includes(prop)) {
+    console.log(("sadrzi"));
+  }else {
+    console.log("ne sadrzi");
+  }
 }
 
-console.log(a1);
-console.log("===========================");
-console.log(a2);
+isContainProp(a1, "name");
