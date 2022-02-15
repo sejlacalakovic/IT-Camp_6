@@ -328,26 +328,26 @@ var Macka = {
     glad: 0,
     usamljenost: 0,
     sreca: 0,
+    igranje: function () {
+        this.glad += 5;
+        this.usamljenost += 5;
+        this.sreca += 20;
+    },
+    jelo: function () {
+        this.glad -= 5;
+        this.sreca += 5;
+    },
+    pet: function () {
+        this.usamljenost -= 5;
+        this.umor += 5;
+    },
+    spavanje: function () {
+        this.umor -= 5;
+    }
 }
 
-function igranje() {
-    this.glad += 5;
-    this.usamljenost += 5;
-    this.sreca += 20;
-}
 
-function jelo() {
-    this.glad -= 5;
-    this.sreca += 5;
-}
 
-function pet() {
-    this.usamljenost -= 5;
-    this.umor += 5;
-}
 
-function spavanje() {
-    this.umor -= 5;
-}
 
 
