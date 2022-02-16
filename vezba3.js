@@ -323,31 +323,35 @@
 
 
 
-var Macka = {
-    umor: 0,
-    glad: 0,
-    usamljenost: 0,
-    sreca: 0,
-    igranje: function () {
-        this.glad += 5;
-        this.usamljenost += 5;
-        this.sreca += 20;
-    },
-    jelo: function () {
-        this.glad -= 5;
-        this.sreca += 5;
-    },
-    pet: function () {
-        this.usamljenost -= 5;
-        this.umor += 5;
-    },
-    spavanje: function () {
-        this.umor -= 5;
-    }
-}
+// var Macka = {
+//     umor: 0,
+//     glad: 0,
+//     usamljenost: 0,
+//     sreca: 0,
+//     igranje: function () {
+//         this.glad += 5;
+//         this.usamljenost += 5;
+//         this.sreca += 20;
+//     },
+//     jelo: function () {
+//         this.glad -= 5;
+//         this.sreca += 5;
+//     },
+//     pet: function () {
+//         this.usamljenost -= 5;
+//         this.umor += 5;
+//     },
+//     spavanje: function () {
+//         this.umor -= 5;
+//     }
+// }
 
 
 
 
 
-
+//greeting
+//apply
+//call
+//bind
+//asinhroni javascript
