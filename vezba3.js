@@ -385,3 +385,10 @@
 // console.log(a.class);
 
 // console.log(a["class"]);
+
+
+
+const b = { a: 1, b: 2};
+
+delete b.b;
+console.log(b);
