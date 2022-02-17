@@ -348,10 +348,17 @@
 
 
 
-
-
 //greeting
 //apply
 //call
 //bind
+
+
+
+
 //asinhroni javascript
+
+
+const data = {a: 1, b: 2};
+
+console.log(Object.keys(data));
