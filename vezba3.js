@@ -374,7 +374,6 @@
 
 
 
-
 // const b = ["a", "b"];
 
 // const a = {
@@ -388,7 +387,51 @@
 
 
 
-const b = { a: 1, b: 2};
+// const b = { a: 1, b: 2};
 
-delete b.b;
-console.log(b);
+// delete b.b;
+// console.log(b);
+
+// zadatak mozemo resiti pomocu ova tri nacina.
+
+
+
+// var library = [
+//     {
+//         age: 29,
+//     },
+
+//     {
+//         age: 14,
+//     },
+
+//     {
+//         age: 25,
+//     },
+//     {
+//         age: 19,
+//     },
+
+//     {
+//         age: 12,
+//     }
+// ]
+// function godine(arr) {
+//     res = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i].age < 18) {
+//             res.push(arr[i]);
+//     }
+// }
+//     return res  
+// }
+
+// console.log(godine(library));
+
+
+
+
+
+
+
+
