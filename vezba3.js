@@ -359,6 +359,29 @@
 //asinhroni javascript
 
 
-const data = {a: 1, b: 2};
+// const data = { a: 1, b: 2 };
 
-console.log(Object.keys(data));
+// console.log(Object.entries(data));
+
+
+
+// function without(data, prop) {
+//     delete data[prop];
+// return data;
+// }
+
+// console.log(without({ a: 1, b: 2 }, "b"));
+
+
+
+
+// const b = ["a", "b"];
+
+// const a = {
+//     name: "a",
+//     class: "b"
+// };
+
+// console.log(a.class);
+
+// console.log(a["class"]);
