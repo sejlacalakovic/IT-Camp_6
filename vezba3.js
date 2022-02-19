@@ -469,7 +469,26 @@
 
 
 
+function wash(callback) {
+    setTimeout(function() {
+        console.log('wash');
+        callback();
+     }, 3000);
+}
+
+function wash(callback) {
+    setTimeout(function() {
+        console.log('dry');
+        callback();
+     }, 2000);
+}
 
 
+function wash(callback) {
+    setTimeout(function() {
+        console.log('fold');
+        callback();
+     }, 1000);
+}
 
-
+doLaundry([wash, dry, fold]);
