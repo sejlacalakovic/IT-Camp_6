@@ -514,3 +514,29 @@
 
 // Asinhrono ,
 //  u kojem skripta omogućuje da se stranica nastavi sa procesiranjem i rukuje odgovorom ako i kada stigne.
+
+
+
+// function now() {
+//     return 21;
+//    }
+//    function later() {
+//     answer = answer * 2;
+//     console.log( “Smisao života je:”, answer );
+//    }
+//    var answer = now();
+//    setTimeout( later, 1000 ); 
+//    // Smisao života je: 42
+//   // Ovaj program se sastoji od dva dela: dela koji se izvršava sada i dela koji će se izvršiti
+//    //kasnije. Trebalo bi da bude prilično jasno koji su to delovi, ali bićemo sasvim eksplicitni:
+
+//    Sada:
+//    function now() {
+//     return 21;
+//    }
+//    function later() { .. }
+//    var answer = now();
+//    setTimeout( later, 1000 );
+//    Kasnije:
+//    answer = answer * 2;
+//    console.log( “Smisao života je:”, answer );
