@@ -469,37 +469,48 @@
 
 
 
-function wash(callback) {
-    setTimeout(function() {
-        console.log("wash");
-        callback();
-     }, 3000);
-}
+// function wash(callback) {
+//     setTimeout(function() {
+//         console.log("wash");
+//         callback();
+//      }, 3000);
+// }
 
-function dry(callback) {
-    setTimeout(function() {
-        console.log("dry");
-        callback();
-     }, 2000);
-}
-
-
-function fold(callback) {
-    setTimeout(function() {
-        console.log("fold");
-        callback();
-     }, 1000);
-}
+// function dry(callback) {
+//     setTimeout(function() {
+//         console.log("dry");
+//         callback();
+//      }, 2000);
+// }
 
 
-function doLaundry(actions) {
-    actions[0] (() => {
+// function fold(callback) {
+//     setTimeout(function() {
+//         console.log("fold");
+//         callback();
+//      }, 1000);
+// }
 
-        actions[1] (() => {
-            actions[2] (() => {
-                console.log("Done");
-            })
-        })
-    })
-}
-doLaundry([wash, dry, fold]);
+
+// function doLaundry(actions) {
+//     actions[0] (() => {
+
+//         actions[1] (() => {
+//             actions[2] (() => {
+//                 console.log("Done");
+//             })
+//         })
+//     })
+// }
+// doLaundry([wash, dry, fold]);
+
+
+
+
+
+// Sinhronično ,
+//  u kojem se skripta zaustavlja i čeka server da pošalje odgovor prije nego nastavi.
+
+
+// Asinhrono ,
+//  u kojem skripta omogućuje da se stranica nastavi sa procesiranjem i rukuje odgovorom ako i kada stigne.
