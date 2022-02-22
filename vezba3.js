@@ -582,3 +582,21 @@
 // });
 
 // console.log(evenNumbers);
+
+
+
+
+// let str = "tHE qUIKk brOWN FOx"
+
+// a = str.split("");
+
+// newStr = "";
+
+// a.forEach((char, i ) => {
+//     if (i % 2 === 0) {
+//         newStr += char.toLowerCase()
+//     }else {
+//         newStr += char.toLowerCase()
+//     }
+// });
+// console.log(newStr);
