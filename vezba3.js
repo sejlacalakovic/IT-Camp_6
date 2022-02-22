@@ -543,28 +543,42 @@
 
 
 
- var peoples = [
-        {
-           author: "bill gates"
-        },
+//  var peoples = [
+//         {
+//            author: "bill gates"
+//         },
     
-        {
-         author: "steve jobs"
-        },
+//         {
+//          author: "steve jobs"
+//         },
     
-        {
-          author: "suzanne collins"
-        },
-        {
-           author: "bill gates"
-        },
+//         {
+//           author: "suzanne collins"
+//         },
+//         {
+//            author: "bill gates"
+//         },
     
-        {
-           author: "steve jobs"
-        }
-    ]
+//         {
+//            author: "steve jobs"
+//         }
+//     ]
     
-    peoples.forEach((el) => {
-        console.log(el.author);
-    });
+//     peoples.forEach((el) => {
+//         console.log(el.author);
+//     });
 
+
+
+// const numbers = [45, 4, 9, 16, 25, 13, 38, 60, 61, 52, 29];
+// const evenNumbers = [];
+
+
+// numbers.forEach((el) => {
+//     if (el % 2 === 0) {
+//     evenNumbers.push(el);
+//     }
+
+// });
+
+// console.log(evenNumbers);
