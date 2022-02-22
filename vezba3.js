@@ -600,3 +600,15 @@
 //     }
 // });
 // console.log(newStr);
+
+
+
+data = [NaN, 0, 15, false, -22, "", undefined, 47, null];
+let counter = 0;
+
+data.forEach((el) => {
+if (!el) {
+    counter ++;
+}
+});
+console.log(counter);
