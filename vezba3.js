@@ -540,3 +540,31 @@
 //    Kasnije:
 //    answer = answer * 2;
 //    console.log( “Smisao života je:”, answer );
+
+
+
+ var peoples = [
+        {
+           author: "bill gates"
+        },
+    
+        {
+         author: "steve jobs"
+        },
+    
+        {
+          author: "suzanne collins"
+        },
+        {
+           author: "bill gates"
+        },
+    
+        {
+           author: "steve jobs"
+        }
+    ]
+    
+    peoples.forEach((el) => {
+        console.log(el.author);
+    });
+
