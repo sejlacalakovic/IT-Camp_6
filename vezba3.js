@@ -603,12 +603,31 @@
 
 
 
-data = [NaN, 0, 15, false, -22, "", undefined, 47, null];
-let counter = 0;
+// data = [NaN, 0, 15, false, -22, "", undefined, 47, null];
+// let counter = 0;
 
-data.forEach((el) => {
-if (!el) {
-    counter ++;
-}
-});
-console.log(counter);
+// data.forEach((el) => {
+// if (!el) {
+//     counter ++;
+// }
+// });
+// console.log(counter);
+
+
+
+
+const persons = [
+    {firstname : "Malcom", lastname: "Reynolds"},
+    {firstname : "Kaylee", lastname: "Frye"},
+    {firstname : "Jayne", lastname: "Cobb"}
+  ];
+ console.log(persons);
+ 
+ 
+  function getFullName(item) {
+    return [item.firstname,item.lastname].join(" ");
+  }
+
+
+
+ 
