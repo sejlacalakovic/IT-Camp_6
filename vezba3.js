@@ -631,8 +631,9 @@
 //   };
 
 
-//map - pravi novi niz
-
+//map - pravi novi niz, koliko ima el u stari niz , toliko mora da ima i unovi niz
+// izdvaja neke elemente iz niza
+//filter - pravi novi niz, popunjava ga elementima koji ispunjavju uslov
 
 const cars = ["BMW", 123, false, "Sab", 12.5, "Jps jedan element"]
 
