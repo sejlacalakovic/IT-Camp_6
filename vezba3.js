@@ -547,23 +547,23 @@
 //         {
 //            author: "bill gates"
 //         },
-    
+
 //         {
 //          author: "steve jobs"
 //         },
-    
+
 //         {
 //           author: "suzanne collins"
 //         },
 //         {
 //            author: "bill gates"
 //         },
-    
+
 //         {
 //            author: "steve jobs"
 //         }
 //     ]
-    
+
 //     peoples.forEach((el) => {
 //         console.log(el.author);
 //     });
@@ -631,14 +631,99 @@
 //   };
 
 
-//map - pravi novi niz, koliko ima el u stari niz , toliko mora da ima i unovi niz
+
+
+
+//map - koristimo kad hocemo da uradimo nesto na svim elementima, pravi novi niz sa istim brojem el, koliko ima el u stari niz , toliko mora da ima i unovi niz
 // izdvaja neke elemente iz niza
+
+
 //filter - pravi novi niz, popunjava ga elementima koji ispunjavju uslov
 
-const cars = ["BMW", 123, false, "Sab", 12.5, "Jps jedan element"]
 
-arr1 = cars.map((el) => {
-return el + "novi el"
-});
+//foreach - kada nesto treba da pomnozimo, podelimo
 
-console.log(arr1);
+
+
+
+// const cars = ["BMW", 123, false, "Sab", 12.5, "Jps jedan element"]
+
+// arr1 = cars.map((el) => {
+// return el + "novi el"
+// });
+
+// console.log(arr1);
+
+
+
+//const cars = ["BMW", 123, false, "Sab", 12.5, "Jps jedan element"]
+
+// arr1  = cars.map((el) => {
+// if (typeof el === "number") {
+//     return el;
+// }
+// });
+
+// arr2  = cars.map((el) => {
+//     if (typeof el === "number") {
+//         return el;
+//     }
+// });
+// console.log(arr1);
+// console.log(arr2);
+
+
+
+
+// some - da li makar jedan el u nizu ispunjava dati uslov
+
+// arr1 = [1, 2, 3, 4, 5, 5, 7, 6, 5, 5, 5, 5, 5];
+
+
+// res = arr1.some((el) => {
+// return el > 6;
+// });
+
+
+
+// //every - da svaki element ispuni uslov
+
+// res2 = arr1.every((el) => {
+//     return el > 0;
+//     });
+
+// // console.log(arr1);
+// // console.log(res);
+// // console.log(res2);
+
+// if (
+//     !arr1.every((el) => {
+//         return el < 1
+//     })
+// ) {
+//     console.log("ne ispunjavaju svi elementi dati uslov");
+// }else {
+//     console.log("ispunjavaju svi elementi dati uslov");
+// }
+
+
+
+
+
+// const array = [1, 2, 3, 4];
+
+// // 0 + 1 + 2 + 3 + 4
+
+
+// const sumWithInitial = array.reduce((previousValue, currentValue) => {
+//     if (currentValue % 2 === 0) {
+//         return previousValue + 1;
+//     } else {
+//         return previousValue;
+//     }
+// }, 0);
+
+// console.log(sumWithInitial);
+// // expected output: 10
+
+
