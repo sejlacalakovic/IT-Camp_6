@@ -757,11 +757,16 @@ const heros = [
     { name: "Black Panther"},
     { name: "Captain Marvel"},
     
-]
+];
 
+const heros2 = heros.map((el, index) => {
+    return {
+        id:index,
+        hero: el.name,
+    };
+});
 
-
-
+console.log(heros2);
 
 
 
