@@ -752,8 +752,10 @@
 
 
 const heros = [
-    { name: "Spider Man"}
-    { name: ""}
+    { name: "Spider Man"},
+    { name: "Thor"},
+    { name: "Black Panther"},
+    { name: "Captain Marvel"},
     
 ]
 
