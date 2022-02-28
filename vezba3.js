@@ -634,8 +634,8 @@
 
 
 
-//map - koristimo kad hocemo da uradimo nesto na svim elementima, pravi novi niz sa istim brojem el, koliko ima el u stari niz , toliko mora da ima i unovi niz
-// izdvaja neke elemente iz niza
+//map - koristimo kad hocemo da uradimo nesto na svim elementima, pravi novi niz sa istim brojem el, 
+//koliko ima el u stari niz , toliko mora da ima i unovi niz, izdvaja neke elemente iz niza
 
 
 //filter - pravi novi niz, popunjava ga elementima koji ispunjavju uslov
@@ -751,26 +751,26 @@
 
 
 
-const heros = [
-    { name: "Spider Man"},
-    { name: "Thor"},
-    { name: "Black Panther"},
-    { name: "Captain Marvel"},
+// const heros = [
+//     { name: "Spider Man"    },
+//     { name: "Thor"          },
+//     { name: "Black Panther" },
+//     { name: "Captain Marvel"},
     
-];
+// ];
 
-const heros2 = heros.map((el, index) => {
-    return {
-        id:index,
-        hero: el.name,
-    };
-});
+// const heros2 = heros.map((el, index) => {
+//     return {
+//         id:index,
+//         hero: el.name,
+//     };
+// });
 
-console.log(heros2);
-
-
+// console.log(heros2);
 
 
 
 
+
+// objekat promise - predstavlja konacni kraj ili neuspeh asinhrone operacije i njenu konacnu vrednost.
 // sledeci cas promise
