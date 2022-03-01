@@ -773,20 +773,32 @@
 
 
 
-let myPromise = new Promise(function(myResolve, myReject) {
-    // "Producing Code" (May take some time)
+// let myPromise = new Promise(function(myResolve, myReject) {
+//     // "Producing Code" (May take some time)
     
-      myResolve(); // when successful
-      myReject();  // when error
-    });
+//       myResolve(); // when successful
+//       myReject();  // when error
+//     });
   
-    // "Consuming Code" (Must wait for a fulfilled Promise)
-    myPromise.then(
-      function(value) { /* code if successful */ },
-      function(error) { /* code if some error */ }
-    );
+//     // "Consuming Code" (Must wait for a fulfilled Promise)
+//     myPromise.then(
+//       function(value) { /* code if successful */ },
+//       function(error) { /* code if some error */ }
+//     );
 
 
 
 // objekat promise - predstavlja konacni kraj ili neuspeh asinhrone operacije i njenu konacnu vrednost.
-// sledeci cas promise
+
+
+function job() {
+  return "hello world"
+}
+
+let mypromise = new Promise ((reslove, reject) => {
+reslove(job());
+});
+
+mypromise.then((val) => {
+console.log(val);
+});
