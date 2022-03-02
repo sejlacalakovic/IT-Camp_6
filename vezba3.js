@@ -791,14 +791,26 @@
 // objekat promise - predstavlja konacni kraj ili neuspeh asinhrone operacije i njenu konacnu vrednost.
 
 
-function job() {
-  return "hello world"
-}
+// function job() {
+//   return "hello world"
+// }
 
-let mypromise = new Promise ((reslove, reject) => {
-reslove(job());
-});
+// let mypromise = new Promise ((reslove, reject) => {
+//   let res = job();
+//   setTimeout(reslove(res), 2000);
+// });
 
-mypromise.then((val) => {
-console.log(val);
+// mypromise.then((val) => {
+// console.log(val);
+// });
+
+
+(function () {
+  return new Promise((reslove, reject) => {
+    setTimeout(() => {
+      reslove("hello world")
+    }, 2000);
+  });
+}) ().then((res) => {
+  console.log(res);
 });
