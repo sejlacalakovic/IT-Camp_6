@@ -789,6 +789,12 @@
 
 
 // objekat promise - predstavlja konacni kraj ili neuspeh asinhrone operacije i njenu konacnu vrednost.
+// ima tri stanja: panding, reslove i reject
+
+//promise: all, race, allSettled
+
+// async
+
 
 
 // function job() {
@@ -805,12 +811,19 @@
 // });
 
 
-(function () {
-  return new Promise((reslove, reject) => {
-    setTimeout(() => {
-      reslove("hello world")
-    }, 2000);
-  });
-}) ().then((res) => {
-  console.log(res);
-});
+
+// (function () {
+//   return new Promise((reslove, reject) => {
+//     setTimeout(() => {
+//       reslove("hello world")
+//     }, 2000);
+//   });
+// }) ().then((res) => {
+//   console.log(res);
+// });
+
+
+
+
+
+
