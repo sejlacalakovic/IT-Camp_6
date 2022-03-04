@@ -843,6 +843,16 @@
 // jer se koristi za konvertovanje promisa kreiranih od strane drugih biblioteka.
 
 
+
+
+
+// Promise.all(iterable) kao parametar uzima iterabilnu listu promise objekata.
+// Promise.all() metod vraća jedan promise u trenutku kada su svi promisi sa liste uspešno rešeni.
+// Promise.all() metoda će vratiti “promis”, čak i kada joj se prosledi prazna lista ili element 
+// koji nije promise (pogledaj primer). Kod ove metode redosled izvršavanja liste promisa nije zagarantovan, 
+// jedino je zagarantovano da će vratiti krajnji “promis”, kada svi promisi sa liste budu fullfiled.
+
+
 //promise: all, race, allSettled
 
 // async
