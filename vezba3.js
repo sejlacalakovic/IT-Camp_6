@@ -803,7 +803,6 @@
 
 
 
-
 // promise može nalaziti u jednom od tri stanja:
 
 // 1.Pending – kada se asinhrona radnja još uvek izvršava
@@ -816,6 +815,14 @@
 // 1.Kreiranje promisa unutar asinhrone funkcije
 // 2.Korišćenje kreiranog promisa (kod se nalazi izvan asinhrone funkcije)
 // 3.Kreiranje promisa
+
+
+// Promise reaguje na promenu svoga stanja pozivajući callback funkciju. 
+// Ukoliko je nakon promene stanja promise u stanju fullfiled poziva se metoda then(). 
+// Ova metoda prihvata dva parametra “onReslove” i “onRejected” koji su tipa funkcije.
+
+
+// Ukoliko je nakon promene stanja, promise u stanju rejected, poziva se metoda catch().
 
 
 
