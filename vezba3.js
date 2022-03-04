@@ -789,7 +789,36 @@
 
 
 // objekat promise - predstavlja konacni kraj ili neuspeh asinhrone operacije i njenu konacnu vrednost.
-// ima tri stanja: panding, reslove i reject
+
+
+// Funkcija resolve() se poziva u delu koda koji obradjuje uspešno završenu asinhronu operaciju. 
+// Parametar ove funkcije predstavlja dobijeni podatak iz uspešno završene operacije,
+// stoga se funkcija resolve() koristi da kroz svoj parametar prosledi rezultujući podatak 
+// odgovarajućoj “handler” metodi npr. then() ili Promise.all()…
+
+// Funkcija “reject()” se poziva u delu koda koji obradjuje slučaj kada se pojavi problem sa 
+// izvršavanjem asinhrone operacije. Ona kroz svoj parametar prosledjuje razlog neuspešnosti
+// asinhrone operacije odgovarajućem “hendleru”, najčešće catch() metodi.
+
+
+
+
+
+// promise može nalaziti u jednom od tri stanja:
+
+// 1.Pending – kada se asinhrona radnja još uvek izvršava
+// 2.Fulfill – kada je asinhrona radnja završena uspešno
+// 3.Reject – kada je asinhrona radnja neuspešno završena greškom
+
+
+// Ceo promise mehanizam se može podeliti na dva dela:
+
+// 1.Kreiranje promisa unutar asinhrone funkcije
+// 2.Korišćenje kreiranog promisa (kod se nalazi izvan asinhrone funkcije)
+// 3.Kreiranje promisa
+
+
+
 
 //promise: all, race, allSettled
 
