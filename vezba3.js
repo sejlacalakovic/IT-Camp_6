@@ -853,6 +853,20 @@
 // jedino je zagarantovano da će vratiti krajnji “promis”, kada svi promisi sa liste budu fullfiled.
 
 
+
+
+
+
+
+// Promise.race()
+
+// Promise.race(iterable) je metoda koja takodje kao parametar uzima iterabilnu listu promise
+// objekata a vraća obećanje. Ova metoda vraća rezultat koji “stigne prvi”, 
+// nebitno da li je uspešan ili ne. Pa tako može biti vraćen promise ili 
+// sa krajnjim podatkom kod uspešno izvršene asinhrone operacije ili sa razlogom za neuspešnu operaciju.
+
+
+
 //promise: all, race, allSettled
 
 // async
