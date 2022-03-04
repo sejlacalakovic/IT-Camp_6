@@ -827,6 +827,22 @@
 
 
 
+
+// Promise.resolve()
+// Promise.resolve(value) je metoda koja pravi promise od drugačijih tipova. 
+// Može da primi tri različita tipa kao parametar, nakon čega vraća promise:
+
+// Promise.resolve(vrednost)
+// Kada se ovoj metodi prosledi neka vrednost, ta vrednost će biti prosledjena then() funkciji 
+// kroz njen parametar.
+
+
+// Promise.resolve(drugiPromise)
+// Kada se prosledi neki drugi promise tada se kroz parametar metode then() prosledjuje 
+// eventualno stanje prihvaćenog promise objekta. Ovo je najčešći slučaj,
+// jer se koristi za konvertovanje promisa kreiranih od strane drugih biblioteka.
+
+
 //promise: all, race, allSettled
 
 // async
