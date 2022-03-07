@@ -187,12 +187,25 @@
 
 
 
-request linija (npr. GET /images/logo.jpg
-• header polja zahteva, (npr. Accept-Language: eng)
-• prazna linija
-• opciono telo poruke (message body)
-Request linija i header polja moraju da završe sa
-karakterima CR i LF.
-Prazna linija mora da sadrži samo CR i LF (bez
-praznih mesta).
-Host heder polje je jedino obavezno polje u HTTP 1.1
+// request linija (npr. GET /images/logo.jpg
+// • header polja zahteva, (npr. Accept-Language: eng)
+// • prazna linija
+// • opciono telo poruke (message body)
+// Request linija i header polja moraju da završe sa
+// karakterima CR i LF.
+// Prazna linija mora da sadrži samo CR i LF (bez
+// praznih mesta).
+// Host heder polje je jedino obavezno polje u HTTP 1.1
+
+
+
+
+Po specifikaciji sastoji se od
+• Start-line
+• 0 ili više polja u zaglavlju (header fields) iza
+kojih MORA biti CRLF (novi red)
+• Polja u headeru su u formatu
+Field-Name:Field-Value
+• Obavezna prazna linija (tj. samo CRLF za novi
+red) kojim se odvaja zaglavlje od tela poruke
+• Telo poruke - opciono
