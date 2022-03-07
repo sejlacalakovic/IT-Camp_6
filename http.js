@@ -221,12 +221,20 @@
 
 
 
-Po specifikaciji sastoji se od
-• Status-line
-• 0 ili više polja u zaglavlju (header fields) iza
-kojih MORA biti CRLF (novi red)
-• Polja u headeru su u formatu
-Field-Name:Field-Value
-• Obavezna prazna linija (tj. samo CRLF za novi
-red) kojim se odvaja zaglavlje od tela poruke
-• Telo poruke - opciono
+// Po specifikaciji sastoji se od
+// • Status-line
+// • 0 ili više polja u zaglavlju (header fields) iza
+// kojih MORA biti CRLF (novi red)
+// • Polja u headeru su u formatu
+// Field-Name:Field-Value
+// • Obavezna prazna linija (tj. samo CRLF za novi
+// red) kojim se odvaja zaglavlje od tela poruke
+// • Telo poruke - opciono
+• general-header
+• mogu se pojaviti i u zahtevu i u odgovoru
+• request-header - specifični samo za zahteve
+• response-header - specifični samo za
+Odgovore
+• entity-header - definišu meta informacije o
+telu poruke ili ako telo ne postoji o resursu
+koji je zahtevan
