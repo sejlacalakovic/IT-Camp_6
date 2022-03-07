@@ -114,16 +114,35 @@
 
 
 
-Metode HEAD, OPTIONS i GET su označene kao sigurne metode jer
-ne vrše nikakve promene na serveru, tj dopuštaju samo pregled
-resursa.
-Za razliku od njih, metode POST, PUT i DELETE mogu dovesti do
-promena stanja servera te se zbog toga smatraju nesigurnim.
-U zaglavlju svakog odgovora u inicijalnoj liniji nalazi statusni kod
-odgovora. HTTP statusne kodove odgovora možemo podeliti u pet
-grupa Statusni kodovi :
- 1XX informacioni
- 2XX uspešna realizacija
- 3XX redirekcija
- 4XX klijentska greška 404
- 5XX serverska greška
+// Metode HEAD, OPTIONS i GET su označene kao sigurne metode jer
+// ne vrše nikakve promene na serveru, tj dopuštaju samo pregled
+// resursa.
+// Za razliku od njih, metode POST, PUT i DELETE mogu dovesti do
+// promena stanja servera te se zbog toga smatraju nesigurnim.
+// U zaglavlju svakog odgovora u inicijalnoj liniji nalazi statusni kod
+// odgovora. HTTP statusne kodove odgovora možemo podeliti u pet
+// grupa Statusni kodovi :
+//  1XX informacioni
+//  2XX uspešna realizacija
+//  3XX redirekcija
+//  4XX klijentska greška 404
+//  5XX serverska greška
+
+
+
+
+• 1xx: Informativni
+Zahtev primljen, obrada se nastavlja.
+• 2xx: Uspešno (Success)
+Zahtev primljen, razumljiv je i prihvaćen.
+• 3xx: Redirekcija
+Označava situaciju kada su potrebne dodatne akcije na
+serverskoj strani da bi zahtev bio obrađen (fajlovi premešteni na
+drugu putanju i postavljena redirekcija).
+• 4xx: klijentska greška
+Zahev sintaksno nekorektan ili ne može biti izvršen.
+Najpoznatiji je 404 - Not Found zahtevani resurs ne postoji na
+serveru
+• 5xx: Server Error
+Server zbog interne greške nije uspeo da obavi zahtev koji je
+inače validan
