@@ -200,12 +200,21 @@
 
 
 
-Po specifikaciji sastoji se od
-• Start-line
-• 0 ili više polja u zaglavlju (header fields) iza
-kojih MORA biti CRLF (novi red)
-• Polja u headeru su u formatu
-Field-Name:Field-Value
-• Obavezna prazna linija (tj. samo CRLF za novi
-red) kojim se odvaja zaglavlje od tela poruke
-• Telo poruke - opciono
+// Po specifikaciji sastoji se od
+// • Start-line
+// • 0 ili više polja u zaglavlju (header fields) iza
+// kojih MORA biti CRLF (novi red)
+// • Polja u headeru su u formatu
+// Field-Name:Field-Value
+// • Obavezna prazna linija (tj. samo CRLF za novi
+// red) kojim se odvaja zaglavlje od tela poruke
+// • Telo poruke - opciono
+
+
+
+
+status linija (HTTP/1.1 200 OK)
+heder polja odgovora (ContentType: text/html)
+Prazna linija
+Opciono telo poruke
+Web
