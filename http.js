@@ -101,13 +101,29 @@
 
 
 
-Request metode:
+// Request metode:
 
- PUT i DELETE se ponekad opisuju kao specijalni
-slučajevi POST-a
- TRACE omogućava da se prate “skokovi” po mreži -
-putanja preko koje se obavlja komunikacija
- OPTIONS omogućava da se dobije informacija o
-tome šta server može da obavi
- CONNECT
- PATCH - samo delimična izmena resursa
+//  PUT i DELETE se ponekad opisuju kao specijalni
+// slučajevi POST-a
+//  TRACE omogućava da se prate “skokovi” po mreži -
+// putanja preko koje se obavlja komunikacija
+//  OPTIONS omogućava da se dobije informacija o
+// tome šta server može da obavi
+//  CONNECT
+//  PATCH - samo delimična izmena resursa
+
+
+
+Metode HEAD, OPTIONS i GET su označene kao sigurne metode jer
+ne vrše nikakve promene na serveru, tj dopuštaju samo pregled
+resursa.
+Za razliku od njih, metode POST, PUT i DELETE mogu dovesti do
+promena stanja servera te se zbog toga smatraju nesigurnim.
+U zaglavlju svakog odgovora u inicijalnoj liniji nalazi statusni kod
+odgovora. HTTP statusne kodove odgovora možemo podeliti u pet
+grupa Statusni kodovi :
+ 1XX informacioni
+ 2XX uspešna realizacija
+ 3XX redirekcija
+ 4XX klijentska greška 404
+ 5XX serverska greška
