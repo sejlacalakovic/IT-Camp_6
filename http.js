@@ -131,18 +131,32 @@
 
 
 
-• 1xx: Informativni
-Zahtev primljen, obrada se nastavlja.
-• 2xx: Uspešno (Success)
-Zahtev primljen, razumljiv je i prihvaćen.
-• 3xx: Redirekcija
-Označava situaciju kada su potrebne dodatne akcije na
-serverskoj strani da bi zahtev bio obrađen (fajlovi premešteni na
-drugu putanju i postavljena redirekcija).
-• 4xx: klijentska greška
-Zahev sintaksno nekorektan ili ne može biti izvršen.
-Najpoznatiji je 404 - Not Found zahtevani resurs ne postoji na
-serveru
-• 5xx: Server Error
-Server zbog interne greške nije uspeo da obavi zahtev koji je
-inače validan
+// • 1xx: Informativni
+// Zahtev primljen, obrada se nastavlja.
+// • 2xx: Uspešno (Success)
+// Zahtev primljen, razumljiv je i prihvaćen.
+// • 3xx: Redirekcija
+// Označava situaciju kada su potrebne dodatne akcije na
+// serverskoj strani da bi zahtev bio obrađen (fajlovi premešteni na
+// drugu putanju i postavljena redirekcija).
+// • 4xx: klijentska greška
+// Zahev sintaksno nekorektan ili ne može biti izvršen.
+// Najpoznatiji je 404 - Not Found zahtevani resurs ne postoji na
+// serveru
+// • 5xx: Server Error
+// Server zbog interne greške nije uspeo da obavi zahtev koji je
+// inače validan
+
+
+
+
+200 OK
+Standardan odgovor za svaki uspešan HTTP
+zahtev
+301 Moved Permanently
+Ovaj i svi naredni zahtevi se redirektuju na datunovu
+URL adresu
+400 Bad Request
+Zahtev ne može biti procesuiran zbog greške u sintaksi.
+401 UnauthorizedSlično kao i kod"403 Forbidden"
+statusnog koda
