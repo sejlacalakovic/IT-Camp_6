@@ -15,6 +15,19 @@ pojedinačnom sistemu.
 
 
 
+MALO ISTORIJATA
+
+• [1965.] hipertext Ted Nelson
+ [1989.] Tim Berns Lee i njegov tim na
+CERN kreirao HTTP protokol zajedno sa
+pratećim tehnologijama klijenta i servera kao
+deo projekta
+Worl Wide Web
+U početku samo GET a u odgovoru samo
+HTML stranica.
+
+
+
 
 
 
