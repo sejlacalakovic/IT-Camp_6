@@ -160,16 +160,28 @@
 // Zahtev ne može biti procesuiran zbog greške u sintaksi.
 // 401 UnauthorizedSlično kao i kod"403 Forbidden"
 // statusnog koda
-403 Forbidden
-Zahtev je ispravan ali server odbija da
-odgovori na. Ovaj statusni kod se
-pojavljuje kada nisu dozvoljena prava
-pristupa resursima na serveru
-404 Not Found
-Traženi resurs nije pronađen na datoj URL
-adresi
-500 Internal Server Error
-Generiška poruka o grešci
+// 403 Forbidden
+// Zahtev je ispravan ali server odbija da
+// odgovori na. Ovaj statusni kod se
+// pojavljuje kada nisu dozvoljena prava
+// pristupa resursima na serveru
+// 404 Not Found
+// Traženi resurs nije pronađen na datoj URL
+// adresi
+// 500 Internal Server Error
+// Generiška poruka o grešci
 
+
+
+
+• Omogućava da jedinstveno odredimo resurs kojem
+pristupamo
+• Protokol je http ili https
+Svaki sajt, svaka stranica i svaki resurs na sajtu imaju
+jedinstvenu URL adresu
+URL obezbeđuje univerzalni i konzistentni način za
+pristupanje informacijama. Sam URL nosi
+informacije o protokolu, nazivu domena, lokaciji fajla
+na serveru i mnoge druge detalje.
 
 
