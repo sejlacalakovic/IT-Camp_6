@@ -150,13 +150,26 @@
 
 
 
-200 OK
-Standardan odgovor za svaki uspešan HTTP
-zahtev
-301 Moved Permanently
-Ovaj i svi naredni zahtevi se redirektuju na datunovu
-URL adresu
-400 Bad Request
-Zahtev ne može biti procesuiran zbog greške u sintaksi.
-401 UnauthorizedSlično kao i kod"403 Forbidden"
-statusnog koda
+// 200 OK
+// Standardan odgovor za svaki uspešan HTTP
+// zahtev
+// 301 Moved Permanently
+// Ovaj i svi naredni zahtevi se redirektuju na datunovu
+// URL adresu
+// 400 Bad Request
+// Zahtev ne može biti procesuiran zbog greške u sintaksi.
+// 401 UnauthorizedSlično kao i kod"403 Forbidden"
+// statusnog koda
+403 Forbidden
+Zahtev je ispravan ali server odbija da
+odgovori na. Ovaj statusni kod se
+pojavljuje kada nisu dozvoljena prava
+pristupa resursima na serveru
+404 Not Found
+Traženi resurs nije pronađen na datoj URL
+adresi
+500 Internal Server Error
+Generiška poruka o grešci
+
+
+
