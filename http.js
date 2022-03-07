@@ -255,16 +255,27 @@
 
 
 
-• Primer
-HTTP/1.1 200 OK
-Date: Mon, 27 may 2020 12:28:53 GMT
-Server: Apache/2.2.14 (Win32)
-Last-Modified: Wed, 28 may 2020 19:15:56 GMT
-Content-Length: 88
-Content-Type: text/html
-Connection: Closed
-<html>
-<body>
-<h1>Hello, World!</h1>
-</body>
-</html>
+// • Primer
+// HTTP/1.1 200 OK
+// Date: Mon, 27 may 2020 12:28:53 GMT
+// Server: Apache/2.2.14 (Win32)
+// Last-Modified: Wed, 28 may 2020 19:15:56 GMT
+// Content-Length: 88
+// Content-Type: text/html
+// Connection: Closed
+// <html>
+// <body>
+// <h1>Hello, World!</h1>
+// </body>
+// </html>
+
+
+
+Kada kažemo HTTP server u stvari mislimo na Web
+server, jer Web server upravo koristi HTTP protokol za
+rad.
+Osnovna funkcija Web servera je da dostavlja web
+prezentacije klijentima, dakle, slanje HTML dokumenata
+i svega ono što takav dokument može sadržati: teks,
+slike, video materijal,itd
+Apache HTTP server
