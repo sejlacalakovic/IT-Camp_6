@@ -174,14 +174,25 @@
 
 
 
-• Omogućava da jedinstveno odredimo resurs kojem
-pristupamo
-• Protokol je http ili https
-Svaki sajt, svaka stranica i svaki resurs na sajtu imaju
-jedinstvenu URL adresu
-URL obezbeđuje univerzalni i konzistentni način za
-pristupanje informacijama. Sam URL nosi
-informacije o protokolu, nazivu domena, lokaciji fajla
-na serveru i mnoge druge detalje.
+// • Omogućava da jedinstveno odredimo resurs kojem
+// pristupamo
+// • Protokol je http ili https
+// Svaki sajt, svaka stranica i svaki resurs na sajtu imaju
+// jedinstvenu URL adresu
+// URL obezbeđuje univerzalni i konzistentni način za
+// pristupanje informacijama. Sam URL nosi
+// informacije o protokolu, nazivu domena, lokaciji fajla
+// na serveru i mnoge druge detalje.
 
 
+
+
+request linija (npr. GET /images/logo.jpg
+• header polja zahteva, (npr. Accept-Language: eng)
+• prazna linija
+• opciono telo poruke (message body)
+Request linija i header polja moraju da završe sa
+karakterima CR i LF.
+Prazna linija mora da sadrži samo CR i LF (bez
+praznih mesta).
+Host heder polje je jedino obavezno polje u HTTP 1.1
