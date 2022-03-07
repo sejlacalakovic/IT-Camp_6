@@ -88,13 +88,26 @@
 
 
 
+// Request metode:
+
+//  GET - samo za preuzimanje podataka sa servera
+//  HEAD - za preuzimanje zaglavlja poruke bez
+// preuzimanja tela poruke
+//  POST - poruke sadrže i podatke na osnovu kojih se
+// formira novi URI resurs
+//  PUT slično kao POST sa razlikom da se URI resurs
+// ako je već postojao menja
+//  DELETE metoda za brisanje nekog resursa
+
+
+
 Request metode:
 
- GET - samo za preuzimanje podataka sa servera
- HEAD - za preuzimanje zaglavlja poruke bez
-preuzimanja tela poruke
- POST - poruke sadrže i podatke na osnovu kojih se
-formira novi URI resurs
- PUT slično kao POST sa razlikom da se URI resurs
-ako je već postojao menja
- DELETE metoda za brisanje nekog resursa
+ PUT i DELETE se ponekad opisuju kao specijalni
+slučajevi POST-a
+ TRACE omogućava da se prate “skokovi” po mreži -
+putanja preko koje se obavlja komunikacija
+ OPTIONS omogućava da se dobije informacija o
+tome šta server može da obavi
+ CONNECT
+ PATCH - samo delimična izmena resursa
