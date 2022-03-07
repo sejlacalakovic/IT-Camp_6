@@ -77,11 +77,24 @@
 
 
 
-HTTP autentikacija
- Osnovni model - basic access
-authentication
- Digest access authentication -
-kompleksniji oblik a ujedno i sigurniji,
-MD5 ili nešto slično.
-HTTP omogućuje okruženje za kontrolu
-pristupa i autentikaciju.
+// HTTP autentikacija
+//  Osnovni model - basic access
+// authentication
+//  Digest access authentication -
+// kompleksniji oblik a ujedno i sigurniji,
+// MD5 ili nešto slično.
+// HTTP omogućuje okruženje za kontrolu
+// pristupa i autentikaciju.
+
+
+
+Request metode:
+
+ GET - samo za preuzimanje podataka sa servera
+ HEAD - za preuzimanje zaglavlja poruke bez
+preuzimanja tela poruke
+ POST - poruke sadrže i podatke na osnovu kojih se
+formira novi URI resurs
+ PUT slično kao POST sa razlikom da se URI resurs
+ako je već postojao menja
+ DELETE metoda za brisanje nekog resursa
