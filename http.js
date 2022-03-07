@@ -271,11 +271,11 @@
 
 
 
-Kada kažemo HTTP server u stvari mislimo na Web
-server, jer Web server upravo koristi HTTP protokol za
-rad.
-Osnovna funkcija Web servera je da dostavlja web
-prezentacije klijentima, dakle, slanje HTML dokumenata
-i svega ono što takav dokument može sadržati: teks,
-slike, video materijal,itd
-Apache HTTP server
+// Kada kažemo HTTP server u stvari mislimo na Web
+// server, jer Web server upravo koristi HTTP protokol za
+// rad.
+// Osnovna funkcija Web servera je da dostavlja web
+// prezentacije klijentima, dakle, slanje HTML dokumenata
+// i svega ono što takav dokument može sadržati: teks,
+// slike, video materijal,itd
+// Apache HTTP server.
