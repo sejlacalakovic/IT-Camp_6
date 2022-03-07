@@ -230,11 +230,24 @@
 // • Obavezna prazna linija (tj. samo CRLF za novi
 // red) kojim se odvaja zaglavlje od tela poruke
 // • Telo poruke - opciono
-• general-header
-• mogu se pojaviti i u zahtevu i u odgovoru
-• request-header - specifični samo za zahteve
-• response-header - specifični samo za
-Odgovore
-• entity-header - definišu meta informacije o
-telu poruke ili ako telo ne postoji o resursu
-koji je zahtevan
+// • general-header
+// • mogu se pojaviti i u zahtevu i u odgovoru
+// • request-header - specifični samo za zahteve
+// • response-header - specifični samo za
+// Odgovore
+// • entity-header - definišu meta informacije o
+// telu poruke ili ako telo ne postoji o resursu
+// koji je zahtevan
+
+
+
+
+Primer
+GET /articles/http-basics HTTP/1.1
+Host: www.articles.com
+Connection: keep-alive
+Cache-Control: no-cache
+Pragma: no-cache
+Accept:
+text/html,application/xhtml+xml,application/x
+ml;q=0.9,*/*;
