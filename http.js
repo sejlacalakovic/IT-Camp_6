@@ -61,16 +61,27 @@
 
 
 
-Ne pamti stanje komunikacije (stateless)
-Neki serveri sesiju održavaju pomo¢u sakrivenih varijabli ili preko
-HTTP cookies
-HTTP cookies - mala koli£ina podataka koja se £uva na klijentu i
-razmenjuje se u komunikaciji sa serverom.
-• Komunikacija se obično obavlja preko porta 80 ili 8080.
-• Komunikacija između klijenta i host-a obavlja se putem razmene
-poruka • request/ response, drugim rečima
-HTTP server sluša na tom portu i čeka request poruke.
-• Klijent šalje zahtev (request), host obrađuje zahtev i šalje odgovor
-(response)-
-Nakon što je obradio poruku HTTP server vra¢a status poruke i sadržaj
-poruke.
+// Ne pamti stanje komunikacije (stateless)
+// Neki serveri sesiju održavaju pomo¢u sakrivenih varijabli ili preko
+// HTTP cookies
+// HTTP cookies - mala koli£ina podataka koja se £uva na klijentu i
+// razmenjuje se u komunikaciji sa serverom.
+// • Komunikacija se obično obavlja preko porta 80 ili 8080.
+// • Komunikacija između klijenta i host-a obavlja se putem razmene
+// poruka • request/ response, drugim rečima
+// HTTP server sluša na tom portu i čeka request poruke.
+// • Klijent šalje zahtev (request), host obrađuje zahtev i šalje odgovor
+// (response)-
+// Nakon što je obradio poruku HTTP server vra¢a status poruke i sadržaj
+// poruke.
+
+
+
+HTTP autentikacija
+ Osnovni model - basic access
+authentication
+ Digest access authentication -
+kompleksniji oblik a ujedno i sigurniji,
+MD5 ili nešto slično.
+HTTP omogućuje okruženje za kontrolu
+pristupa i autentikaciju.
