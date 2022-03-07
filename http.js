@@ -242,12 +242,29 @@
 
 
 
-Primer
-GET /articles/http-basics HTTP/1.1
-Host: www.articles.com
-Connection: keep-alive
-Cache-Control: no-cache
-Pragma: no-cache
-Accept:
-text/html,application/xhtml+xml,application/x
-ml;q=0.9,*/*;
+// Primer
+// GET /articles/http-basics HTTP/1.1
+// Host: www.articles.com
+// Connection: keep-alive
+// Cache-Control: no-cache
+// Pragma: no-cache
+// Accept:
+// text/html,application/xhtml+xml,application/x
+// ml;q=0.9,*/*;
+
+
+
+
+• Primer
+HTTP/1.1 200 OK
+Date: Mon, 27 may 2020 12:28:53 GMT
+Server: Apache/2.2.14 (Win32)
+Last-Modified: Wed, 28 may 2020 19:15:56 GMT
+Content-Length: 88
+Content-Type: text/html
+Connection: Closed
+<html>
+<body>
+<h1>Hello, World!</h1>
+</body>
+</html>
