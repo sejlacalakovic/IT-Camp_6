@@ -46,15 +46,31 @@
 
 
 
-MALO ISTORIJATA
+// MALO ISTORIJATA
 
--1997 HTTP/1.1 Podržani klijenti: Arena,
-Netscape 2.0, Netscap Navigator Gold,
-Mosaic, Lynx i Internet Explorer 2.0 40%
-svih korisnika je odmah prihvatilo novi
-standard
-Postoje podaci, u pojedinim radovima koji
-prikazuje da je čak 65% korisnika „prešlo―
-na novi standard.
-Zvanično, standard je objavljen u januaru
-1997 godine.
+// -1997 HTTP/1.1 Podržani klijenti: Arena,
+// Netscape 2.0, Netscap Navigator Gold,
+// Mosaic, Lynx i Internet Explorer 2.0 40%
+// svih korisnika je odmah prihvatilo novi
+// standard
+// Postoje podaci, u pojedinim radovima koji
+// prikazuje da je čak 65% korisnika „prešlo―
+// na novi standard.
+// Zvanično, standard je objavljen u januaru
+// 1997 godine.
+
+
+
+Ne pamti stanje komunikacije (stateless)
+Neki serveri sesiju održavaju pomo¢u sakrivenih varijabli ili preko
+HTTP cookies
+HTTP cookies - mala koli£ina podataka koja se £uva na klijentu i
+razmenjuje se u komunikaciji sa serverom.
+• Komunikacija se obično obavlja preko porta 80 ili 8080.
+• Komunikacija između klijenta i host-a obavlja se putem razmene
+poruka • request/ response, drugim rečima
+HTTP server sluša na tom portu i čeka request poruke.
+• Klijent šalje zahtev (request), host obrađuje zahtev i šalje odgovor
+(response)-
+Nakon što je obradio poruku HTTP server vra¢a status poruke i sadržaj
+poruke.
