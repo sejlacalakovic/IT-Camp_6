@@ -620,10 +620,58 @@
 
 
 
-fetch("https://catfact.ninja/facts")
-.then((response) => {
-    return response.json()
-})
-.then((response) => {
-    console.log(response);
-})
+// fetch("https://catfact.ninja/facts")
+// .then((response) => {
+//     return response.json()
+// })
+// .then((response) => {
+//     console.log(response);
+// })
+
+
+//  fetch("https://catfact.ninja/factss")
+//  .then((response) => {
+//      return response.json()
+//  })
+//  .then((response) => {
+//      console.log(response)
+//  })
+// .catch((err) => {
+//     console.log("greska sa serverom");
+// })
+
+//IZBACUJE GRESKU
+
+
+// async function resp() {
+//   const res = await fetch("https://catfact.ninja/facts");
+//   const conJ = await res.json();
+//   console.log(conJ);
+// }
+// resp();
+
+// async function resp() {
+//   try {
+//     const res = await fetch("https://catfact.ninja/facts");
+//     const conJ = await res.json();
+//     console.log(conJ);
+//   } catch (err) {
+//     console.log("greska");
+//   }
+// }
+// resp();
+
+// async function getData() {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     const convJ = await response.json();
+//     //pretvaramo ga u njen body
+//     console.log(convJ);
+//   } catch (err) {
+//     console.log("error");
+//   }
+// }
+// getData();
+
+//catfact.ninja
+//3 da povuce
