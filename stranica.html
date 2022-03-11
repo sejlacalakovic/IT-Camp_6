@@ -11,22 +11,45 @@
     </div>
 
 
-<script>
-var ctr = dokument.getElementById('container')
+    <script>
 
-var subEl = document.createElement('div')
-subEl.style.backgroundColor = 'green'
-subEl.style.border = '1px solid black'
-subEl.style.width = '300px'
-subEl.style.height = '100px'
+        function generateCard(vals) {
 
-ctr.appendChild(subEl)
+            var subEl = dokument.createElement('div')
+            subEl.style.backgroundColor = 'green'
+            subEl.style.border = '1px solid black'
+            subEl.style.width = '300px'
+            subEl.style.height = '100px'
+            subEl.style.margin = '10px'
+            subEl.style.borderRadius = '10px'
+            subEl.innerHTML = vals.fact
+            return subEl
+        }
+        var ctr = dokument.getElementById('container')
+        ctr.style.display = 'flex'
+        ctr.style.justifyContent = 'flex-start'
+        ctr.style.flewWrap = 'wrap'
 
 
-</script>
 
-
-
-
+        fetch("htpps://catfact.ninja/facts")
+            .then((res) => {
+                return res.json();
+            })
+            .then((res) => {
+                for (let i = 0; i < res.data.length; i++) {
+                    ctr.appendChild(generateCard(res.data[i]))
+                }
+            })
+            .catch(() => {
+                console.log(err);
+            });
+    </script>
 </body>
+
 </html>
+
+
+//animacije za sledeci cas obnoviti
+
+
