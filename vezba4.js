@@ -715,4 +715,10 @@ for (var i = 0; i < 3; i++) {
     //   }
    
     
-   
+    //scope clouser objekt niz hoistinh iife
+    // call back async await
+    //varijable event loop web api
+    //producthunt.com/post/javascript-knowleage-map
+    //learnjavascript.online/knowledge-map.html
+    //paginacija
+
