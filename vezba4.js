@@ -707,4 +707,12 @@ for (var i = 0; i < 3; i++) {
     //   setTimeout(fn, 200);
     // }
 
- 
+    //petlja se okrece i u zadnjem pozivanju petlje i bude 3
+    //zbog asinh js se 3 puta ispisuje we Api
+    //ako stavimo let obuhvata samo ovaj deo:
+    // //function fn() {
+    //     console.log(i);
+    //   }
+   
+    
+   
