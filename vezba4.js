@@ -699,4 +699,27 @@ console.log(res);
 
 console.log(sum(1)(2)(3)(4));
 
+
+for (var i = 0; i < 3; i++) {
+    //   function fn() {
+    //     console.log(i);
+    //   }
+    //   setTimeout(fn, 200);
+    // }
+
+    //petlja se okrece i u zadnjem pozivanju petlje i bude 3
+    //zbog asinh js se 3 puta ispisuje we Api
+    //ako stavimo let obuhvata samo ovaj deo:
+    // //function fn() {
+    //     console.log(i);
+    //   }
+   
+    
+    //scope clouser objekt niz hoistinh iife
+    // call back async await
+    //varijable event loop web api
+    //producthunt.com/post/javascript-knowleage-map
+    //learnjavascript.online/knowledge-map.html
+    //paginacija
+
 //fireship youtube tutorijali
