@@ -698,3 +698,5 @@ res = f3(4)
 console.log(res);
 
 console.log(sum(1)(2)(3)(4));
+
+//fireship youtube tutorijali
