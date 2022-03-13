@@ -722,3 +722,4 @@ for (var i = 0; i < 3; i++) {
     //learnjavascript.online/knowledge-map.html
     //paginacija
 
+//fireship youtube tutorijali
