@@ -726,3 +726,23 @@
 
 
 
+//scope clouser objekt niz hoistinh iife
+// call back async await
+//varijable event loop web api
+//producthunt.com/post/javascript-knowleage-map
+//learnjavascript./knowledge-map.html
+//paginacija
+//global scope=var
+//local scope=let
+//up js
+//event
+//geeksforgeeks
+// let i=0;
+
+// for (i < 3; i++) {
+
+//   const log ()=>{
+//     console.log(i);
+//   }
+//   setTimeout(log, 100);
+// }
