@@ -9,15 +9,21 @@
 </head>
 <body> 
 <form>
-    <input type="text" name="inp1" id="inp1">
+    <input type="text" name="email" id="email"> <br>
+    <input type="text" name="name" id="name"> <br>
+    <input type="password" name="password" id="password"> <br>
+    <input type="text" name="username" id="username"> <br>
     <button id="event-btn" type="submit"> EVENT </button>
 </form>
 <script>
     var eBtn = document.getElementById('event-btn')
     eBtn.addEventListener("click", (e) => {
         e.preventDefault()
-        console.log(e)
+        const user = {
+            email: e.target.form[0]
+        }
     })
+
 </script>
 </body>
 </html>
