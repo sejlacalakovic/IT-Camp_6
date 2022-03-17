@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="./forme.css" />
     <title>Document</title>
 </head>
-<body>
-    <div class="container">
-    </div>
-<input type="emial">
-   
-    <input type="password"> 
-
+<body> 
+<form>
+    <input type="text" name="inp1" id="inp1">
+    <button id="event-btn" type="submit"> EVENT </button>
+</form>
+<script>
+    var eBtn = document.getElementById('event-btn')
+    eBtn.addEventListener("click", (e) => {
+        e.preventDefault()
+        console.log(e)
+    })
+</script>
 </body>
 </html>
