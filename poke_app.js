@@ -20,4 +20,16 @@ const getPokeList = () => {
 
 const getPokemon = (URL) => {
     fetch(URL)
-}
+    .then((res) => {
+        const r = res.json();
+        return r;
+
+    })
+    .then((res) => {
+        pokemonArr.push(res);
+        });
+};
+
+getPokeList();
+
+console.log(pokemonResource);
