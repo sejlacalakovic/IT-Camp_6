@@ -1,0 +1,41 @@
+ul.top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: arial;
+    text-align: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  ul.top li {
+    float: left;
+  }
+  ul.top li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    font-size: 17px;
+    border-right: 1px solid #bbb;
+  }
+  ul.top li a:hover:not(.button_home) {
+    background-color: #ddd;
+    color: black;
+  }
+  ul.top li a.button_home {
+    background-color: #4caf50;
+  }
+  
+  @media screen and (max-width: 430px) {
+    ul.top li {
+      width: 100%;
+    }
+    ul.top a {
+      width: 100%;
+    }
+  }
