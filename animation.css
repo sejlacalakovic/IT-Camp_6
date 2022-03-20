@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(219, 221, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .block {
+    width: 600px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: lavender;
+    border: 1px solid rgb(214, 214, 214);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes example {
+    0% {
+      width: 600px;
+      height: 250px;
+      box-shadow: 15px 15px 15px rgb(165, 163, 163, 0.7);
+    }
+    30% {
+      width: 70px;
+      height: 250px;
+      box-shadow: 15px 15px 15px rgb(165, 163, 163, 0.7);
+    }
+    50% {
+      width: 70px;
+      height: 70px;
+      box-shadow: 15px 15px 15px rgb(165, 163, 163, 0.7);
+    }
+    70% {
+      width: 70px;
+      height: 70px;
+      box-shadow: inset 3px 3px 3px 3px lavender;
+    }
+  
+    75% {
+      width: 70px;
+      height: 70px;
+      box-shadow: inset 3px 3px 3px 3px rgb(165, 163, 163, 0.7);
+    }
+    100% {
+      width: 70px;
+      height: 70px;
+    }
+  }
