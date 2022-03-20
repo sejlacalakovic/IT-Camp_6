@@ -129,5 +129,5 @@ function verifyPassword(pwId, verifiedPwId, errorMsg) {
     var errorElement = document.getElementById(verifiedPwId + "Error");
     var isTheSame = (pwElement.value === verifiedPwElement.value);
     return isTheSame;
-}
+};
                  
