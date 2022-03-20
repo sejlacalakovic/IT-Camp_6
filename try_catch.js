@@ -288,4 +288,4 @@
 // }
 // catch(err) {
 //   document.getElementById("demo").innerHTML = err.name;
-// }
+// };
