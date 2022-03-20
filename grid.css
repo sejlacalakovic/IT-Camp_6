@@ -1,0 +1,86 @@
+.container {
+    display: grid;
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-columns: 1fr 1fr 250px;
+    grid-template-areas:
+      "header header aside"
+      "main main aside"
+      "footer footer footer";
+    grid-gap: 0.75em;
+    height: 97vh;
+    width: 97vw;
+  }
+  body {
+    margin: 3px;
+    margin-left: 20px;
+    margin-top: 5px;
+    background-color: rgb(236, 234, 216);
+  }
+  
+  header {
+    grid-area: header;
+    padding: 5px;
+  }
+  
+  main {
+    grid-area: main;
+    padding: 10px;
+  }
+  aside {
+    grid-area: aside;
+    padding: 10px;
+  }
+  footer {
+    grid-area: footer;
+    padding: 10px;
+  }
+  
+  .container header b {
+    font-size: 22px;
+    letter-spacing: 15px;
+  }
+  .container header {
+    border-bottom: 1px solid grey;
+  }
+  .container footer {
+    font-size: 12px;
+    border-top: 1px solid grey;
+  }
+  .container aside {
+    border-left: 1px solid grey;
+  }
+  
+  .container main img {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    border-radius: 4px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 10px grey;
+    margin-right: 50px;
+  }
+  .container aside img {
+    border-radius: 5px;
+    width: 200px;
+    height: 290px;
+    padding: 10px 10px 0px 25px;
+  }
+  .container header i {
+    font-size: 30px;
+    color: rgb(24, 22, 22);
+  }
+  
+  aside p {
+    font-size: 10px;
+    text-align: left;
+    padding: 10px 10px 0px 25px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  @media screen {
+    max-width: 360px;
+    .container;
+  }
