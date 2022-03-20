@@ -1,0 +1,121 @@
+body {
+    background-color: #a5a5a5;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .first_div {
+    height: 250px;
+    width: 320px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px grey;
+  }
+  
+  .header_div {
+    margin-left: -10px;
+    padding: 15px;
+    margin-top: -10px;
+    background-color: rgb(125, 125, 211);
+    width: 97%;
+    padding-bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    padding-top: 5px;
+  }
+  .buttons {
+    display: inline-flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 50px;
+  }
+  
+  .paragraf {
+    margin-top: 10px;
+    width: 110px;
+    background-color: rgb(218, 207, 194);
+  }
+  .button1 {
+    margin-right: 10px;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    width: 100px;
+  }
+  
+  .button2 {
+    border: 1px solid blue;
+    border-radius: 3px;
+    width: 100px;
+    background-color: rgb(220, 220, 233);
+  }
+  body {
+    background-color: #a5a5a5;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .first_div {
+    height: 250px;
+    width: 320px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px grey;
+  }
+  
+  .header_div {
+    margin-left: -10px;
+    padding: 15px;
+    margin-top: -10px;
+    background-color: rgb(125, 125, 211);
+    width: 97%;
+    padding-bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    padding-top: 5px;
+  }
+  .buttons {
+    display: inline-flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 50px;
+  }
+  
+  .paragraf {
+    margin-top: 10px;
+    width: 110px;
+    background-color: rgb(218, 207, 194);
+  }
+  .button1 {
+    margin-right: 10px;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    width: 100px;
+  }
+  
+  .button2 {
+    border: 1px solid blue;
+    border-radius: 3px;
+    width: 100px;
+    background-color: rgb(220, 220, 233);
+    height: 30px;
+  }
