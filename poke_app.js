@@ -28,7 +28,6 @@ const getPokemon = async (URL) => {
     await getPokeList();
 
 // for (let u  = 0; u < pokemonResource.results.length; u++) {
-    
 //     return getPokemon(p.url);
 
 // });
