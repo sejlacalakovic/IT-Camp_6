@@ -10,6 +10,7 @@ const getPokeList = async () => {
         const r = await fetch("https://pokeapi.co/api/v2/pokemon/?offset=10&limit=10"
         );
 const res = await r.json();
+console.log(res);
 pokemonResource = res;
     }catch (error) {
         console.log(error);
