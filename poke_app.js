@@ -12,7 +12,7 @@ const getPokeList = async () => {
 const res = await r.json();
 console.log(res);
 pokemonResource = res;
-    }catch (error) {
+    } catch (error) {
         console.log(error);
     }
 };
@@ -21,8 +21,8 @@ const getPokemon = async (URL) => {
     try {
         const p = await fetch (URL);
         const pokemon = await p.json();
-        pokemonInfo.push(pokemon)
-    }catch (error) {
+        pokemonInfo.push(pokemon)  
+    } catch (error) {
         console.log(error);
     }
     };
@@ -30,7 +30,8 @@ const getPokemon = async (URL) => {
     await getPokeList();
 
 // for (let u  = 0; u < pokemonResource.results.length; u++) {
-//     return getPokemon(p.url);
+    const p = pokemonResource.results[u];
+
 
 // });
 
