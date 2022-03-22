@@ -7,7 +7,8 @@ const pokemonInfo = [];
 
 const getPokeList = async () => {
     try {
-        const r = await fetch("https://pokeapi.co/api/v2/pokemon/?offset=10&limit=10");
+        const r = await fetch("https://pokeapi.co/api/v2/pokemon/?offset=10&limit=10"
+        );
 const res = await r.json();
 pokemonResource = res;
     }catch (error) {
