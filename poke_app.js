@@ -30,11 +30,17 @@ const getPokemon = async (URL) => {
     await getPokeList();
 
 // for (let u  = 0; u < pokemonResource.results.length; u++) {
-    const p = pokemonResource.results[u];
+//     const p = pokemonResource.results[u];
+// await getPokemon(p.url);
+
+// }
 
 
-// });
 
-await Promise.all(pokemonArr);
+pokemonArr = pokemonResource.results.map((p) => {
+    return getPokemon(p.url);
+})
+
+await Promise.allSettled(pokemonArr);
 console.log(pokemonInfo);
 };
