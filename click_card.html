@@ -11,7 +11,7 @@
 
 <body>
     <div class="div1" id="div1">
-        <div class="div2">
+        <div class="div2" >
             <div class="div3" id="div3">
 
             </div>
@@ -19,24 +19,20 @@
         </div>
     </div>
     <script>
-        dokument.getElementById('div3').addEventListener('click', mojafunc3)
-        dokument.getElementById('div2').addEventListener('click', mojafunc2)
-        dokument.getElementById('div1').addEventListener('click', mojafunc1)
+        document.getElementById('div1').addEventListener('click', mojafunc)
+        document.getElementById('div3').addEventListener('click', mojafunc2)
 
-
-        function mojafunc1(e) {
-            e.stopPropagation();
-
-            console.log('MOJA FUNKCIJA!!!! 1111')
+        function mojafunc() {
+            console.log('MOJA FUNKCIJA!!!! 1111');
         }
-        function mojafunc2(e) {
-            e.stopPropagation();
 
+        function mojafunc2() {
             console.log('MOJA FUNKCIJA!!!! 2222');
         }
+        
         function mojafunc3(e) {
-            e.stopPropagation();
-            console.log('MOJA FUNKCIJA!!!! 3333');
+            e.stoppropagation();
+            console.log('MOJA FUNKCIJA!!!! 2222');
         }
     </script>
 </body>
