@@ -1,5 +1,3 @@
-//https://pokeapi.co/api/v2/ability
-
 window.onload = async function() {
 let pokemonResource = {};
 const pokemonInfo = [];
