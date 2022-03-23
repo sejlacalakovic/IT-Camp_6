@@ -16,7 +16,19 @@
     </div>
     </div>
     <script>
-        dokument.getElementById('div').addEventListener('click', mojaFunkcija)
+        dokument.getElementById('div1').addEventListener('click', mojaFunkcija)
+        dokument.getElementById('div3').addEventListener('click', mojafunkcija2)
+        
+        function mojaFunkcija() {
+            console.log('MOJA FUNKCIJA!!!! 1111');
+        }
+
+        function mojafunkcija2(e) {
+e.stoppropagation();
+console.log('MOJA FUNKCIJA!!!! 2222');
+        }
+
+        function mojaFunkcija()
     </script>
 </body>
 </html>
