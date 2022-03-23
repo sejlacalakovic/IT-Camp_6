@@ -4,15 +4,15 @@
     border-radius: solid black 1px;
     background-color: blue;
 }
-.div1 {
-    width: 500px;
-    height: 500px;
+.div2 {
+    width: 400px;
+    height: 400px;
     border-radius: solid black 1px;
-    background-color: blue;
+    background-color: goldenrod;
 }
-.div1 {
-    width: 500px;
-    height: 500px;
+.div3 {
+    width: 300px;
+    height: 300px;
     border-radius: solid black 1px;
-    background-color: blue;
+    background-color: greenyellow;
 }
