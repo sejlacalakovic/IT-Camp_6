@@ -19,19 +19,25 @@
         </div>
     </div>
     <script>
-       dokument.getElementById('div1').addEventListener('click', mojafunc)
-        dokument.getElementById('div3').addEventListener('click', mojafunc2)
-        dokument.getElementById('div2').addEventListener('click', mojafunc3)
+        dokument.getElementById('div3').addEventListener('click', mojafunc3)
+        dokument.getElementById('div2').addEventListener('click', mojafunc2)
+        dokument.getElementById('div1').addEventListener('click', mojafunc1)
 
 
-        function mojafunc() {
+        function mojafunc1(e) {
+            e.stopPropagation();
+
             console.log('MOJA FUNKCIJA!!!! 1111')
         }
         function mojafunc2(e) {
             e.stopPropagation();
+
             console.log('MOJA FUNKCIJA!!!! 2222');
         }
-function mojafunc3()
+        function mojafunc3(e) {
+            e.stopPropagation();
+            console.log('MOJA FUNKCIJA!!!! 3333');
+        }
     </script>
 </body>
 
