@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .kocka {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(248, 98, 123);
+    background-color: pink;
+    border: radius 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform(-50%, -50%);
+  }
