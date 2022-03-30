@@ -1,0 +1,92 @@
+body {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+  }
+  
+  .main-div {
+    background-color: rgb(205, 225, 226);
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    box-shadow: 5px 5px 10px grey;
+  }
+  
+  .picture img {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+  h2 {
+    font: bold;
+    font-size: 28px;
+    color: black;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, serif;
+  }
+  .input {
+    color: rgb(49, 48, 48);
+    font: lighter;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: rgb(227, 229, 248);
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+  
+  input {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .border {
+    border-bottom: 1px solid grey;
+  }
+  .check {
+    margin: 17px 10px 0px 0px;
+    display: inline-block;
+  }
+  .checkbox p {
+    display: inline-block;
+  }
+  .buttons {
+    display: flex;
+    margin: 15px 5px 0px 0px;
+    justify-content: space-between;
+  }
+  .first-b {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to top, #05cc15, #057c15);
+    cursor: pointer;
+  }
+  .second-b {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .transparent {
+    z-index: 2;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
