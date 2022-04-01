@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: O#24252A;
+  background-color: #24252A;
 }
 body {
   margin-top: 5px;
@@ -51,7 +51,7 @@ header {
 }
 
 .nav_links li a:hover {
-  color: O#0088a9;
+  color: #0088a9;
 }
 
 button {
