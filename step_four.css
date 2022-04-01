@@ -32,10 +32,11 @@ body {
     color: rgb(29, 28, 28);
     background: #ffc;
     display: block;
-    height: 190px;
-    width: 190px;
+    height: 175px;
+    width: 175px;
     padding: 10px;
     font-size: 28px;
+    box-shadow: 5px 5px 7px rgb(33 33 33 / 70%);
   }
   
   li {
@@ -52,9 +53,9 @@ body {
     justify-items: center;
     height: 210px;
     width: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.623);
-  
+   
   }
+  
   
   ul li a h3 {
     font-family: arial, sans-serif;
@@ -72,3 +73,15 @@ body {
     .color {
         color: black;
     }
+  ul li a {
+    transform: rotate(10deg);
+    transition-duration: 0.5s;
+  }
+ 
+  ul li  a:hover{
+     transform: rotate(0deg);
+     width: 230px;
+     height: 185px;
+     transition: 0.5s; 
+ }
+ 
