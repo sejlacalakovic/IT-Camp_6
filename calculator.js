@@ -1,4 +1,4 @@
 function kj() {
-      console.log("maja");
+      console.log("šejla");
      }
     kj();
