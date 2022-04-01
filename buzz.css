@@ -20,10 +20,12 @@
   header p {
     display: inline-block;
   }
+  
   header i {
     display: inline-block;
     float: right;
   }
+  
   main {
     background-color: yellowgreen;
     width: 50%;
