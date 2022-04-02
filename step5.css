@@ -1,85 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="step5.css">
-</head>
-<body>
-    <ol>
-        <li><a href="step1.html">Step #1</a></li>
-        <li><a href="step2.html">Step #2</a></li>
-        <li><a href="step3.html">Step #3</a></li>
-        <li><a href="step4.html">Step #4</a></li>
-        <li><a href="step5.html">Step #5</a></li>
-      </ol>
-        <ul>
-          <li>
-            <a href=""
-              ><p class="color">Title #1</p>
-              <p>Text </br>Content #1</p></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><p class="color">Title #1</p>
-              <p>Text</br> Content #1</p></a
-            >
-          </li>
-          <li >
-            <a href=""
-              ><p class="color">Title #1</p>
-              <p>Text </br>Content #1</p></a
-            >
-          </li>
-          <li >
-            <a href=""
-              ><p class="color">Title #1</p>
-              <p>Text </br>Content #1</p></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><p class="color">Title #1</p>
-              <p>Text</br> Content #1</p></a
-            >
-          </li>
-        </ul>
+body {
+    font-family: arial, sans-serif;
+    font-size: 100%;
+    margin: 3 em;
+    background: #666;
+    color: #fff;
+    margin-top: 30px;
+  }
   
-        <ul class="second">
-          <li>
-            <a href=""
-              ><p class="color">Title #1</p>
-              <p>Text </br>Content #1</p></a
-            >
-          </li>
-          <li >
-            <a href=""
-              ><p class="color">Title #1</p>
-              <p>Text </br>Content #1</p></a
-            >
-          </li>
-          <li >
-            <a href=""
-              ><p class="color">Title #1</p>
-              <p>Text Content #1</p></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><p class="color">Title #1</p>
-              <p>Text </br>Content #1</p></a
-            >
-          </li>
-          <li >
-            <a href=""
-              ><p class="color">Title #1</p>
-              <p>Text </br>Content #1</p></a
-            >
-          </li>
-        </ul>
-      
-</body>
-</html>
+  ol li {
+    display: inline;
+    padding-right: 1em;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  ol {
+    text-align: center;
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: rgb(29, 28, 28);
+    background: rgb(236, 202, 89);
+    display: block;
+    height: 175px;
+    width: 175px;
+    padding: 10px;
+    font-size: 28px;
+    box-shadow: 5px 5px 7px rgb(33 33 33 / 70%);
+  }
+  
+  li {
+    text-align: -webkit-match-parent;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding: 10px;
+  }
+  ul li {
+    margin: 10px;
+    display: flex;
+    justify-items: center;
+    height: 210px;
+    width: 200px;
+   
+  }
+  }
+  
+  ul li a h3 {
+    font-family: arial, sans-serif;
+    font-size: 23px;
+  }
+  .second {
+    margin-top: 0;
+    display: flex;
+    color: rgb(29, 28, 28);
+  }
+  ol li a {
+      color: rgb(255, 255, 255);
+    }
+  
+    .color {
+        color: black;
+    }
+  ul li a {
+    transform: rotate(10deg);
+    transition-duration: 0.4s;
+  }
+ 
+  ul li  a:hover{
+     transform: rotate(0deg);
+     width: 230px;
+     height: 185px;
+     transition: 0.3s;
+ }
+ 
