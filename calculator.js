@@ -8,7 +8,7 @@ it
     }
     
     // Setup
-    const testArr = [1];
+    const testArr = [1, ];
     
     // Display code
     console.log(nextInLine(testArr, 6));
