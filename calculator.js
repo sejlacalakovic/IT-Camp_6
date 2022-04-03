@@ -1,5 +1,5 @@
 it
-    function nextInLine() {
+    function nextInLine(arr, ) {
       // Only change code below this line
       arr.push(item);
       var removed = arr.shift();
