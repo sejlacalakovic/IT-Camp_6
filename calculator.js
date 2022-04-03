@@ -2,13 +2,13 @@ it
     function nextInLine(arr, item) {
       // Only change code below this line
       arr.push(item);
-      var = arr.shift();
+      var removed = arr.shift();
       return removed;
       // Only change code above this line
     }
     
     // Setup
-    const testArr = [1, 2, 3, 4, 5];
+    testArr = [1, 2, 3, 4, 5];
     
     // Display code
     console.log(nextInLine(testArr, 6));
