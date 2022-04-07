@@ -9,7 +9,6 @@ function nextInLine(arr, item) {
     // Only change code above this line
 
   }
-  
 
   const testArr = [1, 2, 3, 4, 5];
   
