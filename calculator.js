@@ -14,4 +14,3 @@ function nextInLine(arr, item) {
   
     // Display code
 
-  console.log(nextInLine(testArr, 6));
