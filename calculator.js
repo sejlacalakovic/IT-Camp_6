@@ -3,7 +3,7 @@ function nextInLine(arr, item) {
     // Only change code below this line
 
     arr.push(item);
-    var removed = arr.shift();
+    var removed = arr.shift()
     return removed;
 
     // Only change code above this line
@@ -15,3 +15,4 @@ function nextInLine(arr, item) {
     // Display code
 
     console.log(nextInLine(testArr, 6));
+
