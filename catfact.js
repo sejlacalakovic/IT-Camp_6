@@ -15,5 +15,3 @@ fetch("https://catfact.ninja/facts")
   .catch((err) => {
     console.log(err);
   });
-
-  kjsdgfpuqwOJMKQOPWRJH
