@@ -10,7 +10,7 @@ function nextInLine(arr, item) {
 
   }
 
-  const testArr = [1, 2, 3,]
+  const testArr = [1, 2, 3, ]
   
     // Display 
 
