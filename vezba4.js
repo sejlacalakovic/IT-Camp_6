@@ -778,9 +778,13 @@
 //   return subDiv;
 // }
 
+
 var src = document.getElementById("moj_div");
+
 src.style.display = "flex";
+
 src.style.justifyContent = "flex-start";
+
 src.style.flexWrap = "wrap";
 
 fetch("https://catfact.ninja/facts")
