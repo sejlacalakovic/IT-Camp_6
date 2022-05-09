@@ -964,6 +964,7 @@
 //   setTimeout(reject, 100, "six");
 // });
 
+
 // Promise.race([p5, p6]).then(function(value) {
 //   // Not called
 // }, function(reason) {
