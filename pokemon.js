@@ -1,95 +1,134 @@
-const fetchPokemon = () => {
-      const url = "https://pokeapi.co/api/v2/pokemon/${id}";
-      const info = fetch(url).then((res) => res.json());
-    
-      const pokemon = results.map((data) => ({
-        name: data.name,
-        id: data.id,
-        image: data.sprites["front_default"],
-        type: data.types.map((type) => type.type.name).join(", "),
-      }));
-      displayPokemon(pokemon);
-    };
-    
-    const displayPokemon = (pokemon) => {
-      console.log(pokemon);
-    };
-    fetchPokemon();
-    window.onload = async () => {
-      pokemonResource = [];
-      pokemonInfo = [];
-      pokemonArr = [];
-    
-      const getPokemonList = async () => {
+window.onload = async function () {
+    let pokemonResource = {}
+    let pokemonArr = [];
+    const pokemonInfo = [];
+
+    const getPokeList = async () => {
         try {
-          const url = await fetch(
-            "https://pokeapi.co/api/v2/pokemon/?offset=10&limit=10"
-          );
-    
-          const res = await url.json();
-          pokemonResource = res;
-          console.log(pokemonResource);
+            const r = await fetch("https://pokeapi.co/api/v2/pokemon?offset=10&limit=10");
+            const res = await r.json();
+            pokemonResource = res;
         } catch (error) {
-          console.log(error);
+            console.log(error);
         }
-      };
-    
-      const getPokemon = async (URL) => {
-        try {
-          const poki = await fetch(URL);
-          const pokemon = poki.json();
-          pokemonInfo.push(pokemon);
-        } catch (error) {
-          console.log(error);
-        }
-      };
-    
-      await getPokemonList();
-      pokemonArray = pokemonResource.results.map((r) => {
-        return getPokemon(r.url);
-      });
-      await Promise.all(pokemonArr);
-      console.log(pokemonInfo);
     };
-    
+
+
+
+    const getPokemon = async (URL) => {
+
+        try {
+            const p = await fetch(URL)
+            const pokemon = await p.json();
+            pokemonInfo.push(pokemon)
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    await getPokeList();
+
+pokemonArr = pokemonResource.results.map((p)=>{
+return getPokemon(p.url)
+})
+
+    await Promise.all(pokemonArr).then(() =>
+    console.log(pokemonInfo))
+
+}
+
+
+const colors = {
+	normal: '#A8A77A',
+	fire: '#EE8130',
+	water: '#6390F0',
+	electric: '#F7D02C',
+	grass: '#7AC74C',
+	ice: '#96D9D6',
+	fighting: '#C22E28',
+	poison: '#A33EA1',
+	ground: '#E2BF65',
+	flying: '#A98FF3',
+	psychic: '#F95587',
+	bug: '#A6B91A',
+	rock: '#B6A136',
+	ghost: '#735797',
+	dragon: '#6F35FC',
+	dark: '#705746',
+	steel: '#B7B7CE',
+	fairy: '#D685AD',
+};
+
+
+let url = "https://pokeapi.co/api/v2/pokemon/";
+let card = document.getElementById("card");
+let btn = document.getElementById("btn");
+let visina = document.getElementById("heightOdg");
+let tezina = document.getElementById("weightOdg");
+let exp = document.getElementById("expOdg");
+let pokemonName = document.getElementById("name");
+let type = document.getElementById("type");
+let img = document.getElementById("img")
+let imgCont = document.getElementById("image-container")
+let leftButton = document.querySelector('.left-button');
+let rightButton = document.querySelector('.right-button');
+let prevUrl = null;
+let nextUrl = null;
+let linksDiv = document.getElementById('links')
+
+
+
+btn.style.padding = "10px"
+
+let getPokemons = () => {
+	id = Math.floor(Math.random() * 100) + 1
+	finalUrl = url + id;
+
+	fetch(finalUrl)
+		.then((res) => res.json())
+		.then((data) => getCard(data))
+}
+let color
+let getCard = (data) => {
+	visina.innerHTML = data.height
+	tezina.innerHTML = data.weight
+	exp.innerHTML = data.height
+	pokemonName.innerHTML = data.name[0].toUpperCase() + data.name.slice(1)
+	type.innerHTML = data.types[0].type.name
+	img.src = data.sprites.front_default
+	let themeColor = colors[data.types[0].type.name];
+	imgCont.style.background = themeColor;
+	type.style.background = themeColor;
+	
+}
+
+function linksFunk (value) {
+	let listItem = document.createElement('div')
+    listItem.style.width = "100px";
+    listItem.style.height = "50px";
+    listItem.style.backgroundColor = "darkseagreen";
+    listItem.style.display = "inline-block"
+    listItem.style.flexWrap = "wrap"
+    listItem.style.margin = "10px"
+    listItem.style.padding = "10px"
+    listItem.style.borderRadius = "4px"
+    listItem.style.verticalAlign = "middle"
+    listItem.style.justifyContent = "space-around"
+	listItem.innerHTML = value;
+	return listItem;
+}
+
+async function fetcher() {
+	rez = await fetch("https://pokeapi.co/api/v2/pokemon?offset=20&limit=10")
+	rez = await rez.json()
+	for (let i = 0; i< rez.results.length; i++) {
+		        linksDiv.appendChild(linksFunk(rez.results[i].name))
+		    }
+console.log(rez);
+}
+fetcher()
 
 
 
 
-    // const pokedex = document.getElementById("pokedex");
-    // const promises = [];
-    // const fetchPokemon = () => {
-    //   for (let i = 0; i <= 50; i++) {
-    //     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
-    
-    //     promises.push(fetch(url).then((res) => res.json()));
-    //   }
-    // };
-    // Promise.all(promises).then((results) => {
-    //   const pokemon = results.map((r) => ({
-    //     name: r.name,
-    //     id: r.id,
-    //     image: r.stripes["front_default"],
-    //     type: r.types.map((t) => t.type.name).join(", "),
-    //   }));
-    // });
-    // fetchPokemon();
-    
-    // const displayPokemon = (pokemon) => {
-    //   console.log(poekmon);
-    //   const htmlElement = pokemon
-    //     .map(
-    //       (pokemon) => `
-    // <li class="card">
-    //     <img class="card-image" src="${pokemon.image}"/>
-    //     <h2 class="card-title">${pokemon.id}. ${pokemon.name}</h2>
-    //     <p class="card-subtitle">Type: ${pokemon.type}</p>
-    // </li>
-    // `
-    //     )
-    
-    //     .join(", ");
-    //   pokedex.innerHTML = htmlElement;
-    // };
-    // fetchPokemon();
-    // displayPokemon();
+btn.addEventListener("click", getPokemons)
+window.addEventListener("load", getPokemons)
