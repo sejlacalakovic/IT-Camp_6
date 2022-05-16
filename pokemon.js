@@ -130,5 +130,5 @@ fetcher()
 
 
 
-btn.addEventListener("click", getPokemons)
+btn.addEventListener("click", getPokemons);
 window.addEventListener("load", getPokemons)
