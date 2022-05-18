@@ -7,7 +7,7 @@ function nextInLine(arr, item) {
   return removed;
 
   // Only change code above this line
-opk[]
+
 }
 
 const testArr = [1, 2, 3, 4, 5];
