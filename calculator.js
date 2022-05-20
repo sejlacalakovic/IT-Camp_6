@@ -12,7 +12,7 @@ function nextInLine(arr, item) {
 
 const testArr = [1, 2, 3, 4, 5];
 
-  // Display yyy
+  // Display yyyy
 
   console.log(nextInLine(testArr, 6));
 
